@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Didot', serif;
+  }
+  
+  body {
+    background-color: #e7e3c7;
+    color: #000000;
+  }
+  
+  /* Hero Image Section */
+  .hero {
+    padding-bottom: 0; /* Reduced padding to decrease vertical space in the hero section */
+  }
+  
+
+  .line {
+    border: none;
+    border-top: 1px solid #000000; /* Customize color and thickness */
+    width: 50%; /* Adjust width as needed */
+    margin-top: 0px; /* Adjust spacing above the line */
+    margin-bottom: 15px; /* Adjust spacing below the line */
+    margin-left: auto;
+    margin-right: auto; /* Centers the line */
+}
+
+
+  .hero-image {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh; /* Further reduced height for a more compact hero image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0; /* Remove margin at the bottom of the hero-image */
+    padding-bottom: 0;
+  }
+
+  
+  .hero h1 {
+    font-size: 4rem; /* Smaller font size for a more compact title */
+    color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 16px 30px; /* Smaller padding */
+    margin-bottom: 5px;
+  }
+  
+  /* Intro Text Section */
+  .intro-text {
+    max-width: 900px;
+    margin: 0.5px auto; /* Reduced top margin */
+    padding: 0 15px;
+    font-size: 1rem; /* Smaller font size */
+    line-height: 2; /* Reduced line height for tighter text */
+    text-align: center;
+  }
+  
+  /* Team Section */
+  .team {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+    text-align: center;
+  }
+  
+  .team h2 {
+    font-size: 2.4rem; /* Smaller font size for the team section heading */
+    font-family: 'Didot', serif;
+    margin-bottom: 20px; /* Reduced bottom margin */
+    color: #333;
+  }
+  
+  /* Team Member Layout */
+  .team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px; /* Reduced bottom margin */
+  }
+  
+  .team-member:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .image-block {
+    flex: 1;
+    max-width: 250px; /* Reduced image size */
+    padding: 15px; /* Reduced padding */
+  }
+  
+  .image-block img {
+    width: 100%;
+    border-radius: 6px; /* Smaller border radius */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  }
+  
+  .text-block {
+    flex: 2;
+    padding: 15px; /* Reduced padding */
+    text-align: left;
+  }
+  
+  .text-block h3 {
+    font-size: 1.5rem; /* Smaller font size */
+    color: #333;
+  }
+  
+  .text-block .title {
+    font-size: 0.9rem; /* Smaller font size */
+    color: #777;
+    margin: 3px 0;
+  }
+  
+  .text-block .bio {
+    font-size: 0.9rem; /* Smaller font size */
+    line-height: 1.4; /* Tighter line height */
+    color: #555;
+  }
+  
+  /* Signature Section */
+  .signature {
+    text-align: center;
+    margin: 40px 0; /* Reduced margin */
+    font-size: 1rem; /* Smaller font size */
+  }
+  
+  .signature-name {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.3rem; /* Smaller font size */
+    color: #333;
+  }
+  
