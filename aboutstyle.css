@@ -43,6 +43,13 @@ nav img {
   width: 300px;
 }
 
+body {
+  background-image: url("Backround.png"); /* Replace with the actual path */
+  background-size: cover;       /* Scales the background to cover the whole screen */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  background-position: center;  /* Centers the background */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+}
 
 /* Logo Circle Container */
 .logo-circle {
@@ -188,6 +195,41 @@ nav img {
     padding: 15px; 
   }
   
+  .team-member {
+    position: relative; 
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+  }
+  
+  .team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-member::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 45, 29, 0.25); /* Brownish color with 30% opacity */
+    z-index: 0; /* Keeps it behind the text and images */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    border-radius: 6px; /* Matches the border radius if needed */
+  }
+  
+  .team-member:hover::before {
+    opacity: 1; /* Shows the overlay on hover */
+  }
+  
+  /* Ensures the content within the team-member remains above the overlay */
+  .team-member .image-block,
+  .team-member .text-block {
+    position: relative;
+    z-index: 1;
+  }
   .image-block img {
     width: 100%;
     border-radius: 6px; 
@@ -217,6 +259,25 @@ nav img {
     color: #555;
   }
   
+  /* Read more/less*/
+  .more-text {
+    display: none; /* Hidden by default */
+  }
+  
+  .read-more-btn {
+    background: none;
+    border: none;
+    color: #635b4b; /* Change this to your desired color */
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0;
+    text-decoration: underline;
+  }
+  
+  .read-more-btn:hover {
+    color: #51493d; /* Change this to a darker shade or a color for hover effect */
+  }
   /* Signature Section */
   .signature {
     text-align: center;
@@ -306,14 +367,31 @@ nav img {
 
 /* Dark Mode */
 .dark-mode {
-  background-color: #121212;
-  color: #ffffff;
+  background-image: url("Backround\ dark.png");
+  background-size: cover;    
+  background-attachment: fixed; 
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
 .dark-mode .footer-feedback {
-  background-color: #1c1c1c;
+  background-color: #ffffff;
 }
 .dark-mode .nav-links ul li a {
   color: #ffffff;
+}
+
+.team {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2.4rem; 
+  font-family: 'Didot', serif;
+  margin-bottom: 20px; 
+  color: #eae4e4;
 }
 
 /* Hover Animation for Team Members */
@@ -323,7 +401,7 @@ nav img {
 
 .team-member:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(244, 242, 242, 0.2);
 }
 
 /* Stats Section */
