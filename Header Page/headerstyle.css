@@ -5,10 +5,36 @@
     font-family: 'Comic Neue';
 }
 .header{
-    min-height: 100vh;
-    width: 100%;
-    background: rgb(231,227,199);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    
 }
+
+body{
+    /* Sets the background image and colour*/
+    background: rgb(231,227,199);
+    background-image: url("/images/60565943-081b-4e70-9747-8e7eeb9ba9ec.jpg"); /* Replace with the actual path */
+    background-size: 1600px;       
+    background-attachment: fixed; 
+    background-position: top;  
+    background-repeat: no-repeat; 
+}
+
+/* Scroll-to-Top Button */
+#scrollToTopBtn {
+    /*display: none;  Hidden by default */
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it’s on top of other elements */
+    transition: opacity 0.3s;
+  }
+
+#scrollToTopBtn:hover {
+    background-color: #3bf810;
+  }

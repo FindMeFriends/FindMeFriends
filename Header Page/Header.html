@@ -17,6 +17,26 @@
 
 
     </section>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">⇪</button>
+    <script>
+         // Scroll-to-Top Functionality
+    window.onscroll = function() { toggleScrollButton() };
     
+    function toggleScrollButton() {
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    }
+
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 </body>
 </html>
