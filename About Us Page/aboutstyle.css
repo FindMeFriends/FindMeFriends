@@ -44,7 +44,7 @@ nav img {
 }
 
 body {
-  background-image: url("Backround.png"); /* Replace with the actual path */
+  background-image: url("/images/Backround.png"); /* Replace with the actual path */
   background-size: cover;       /* Scales the background to cover the whole screen */
   background-attachment: fixed; /* Keeps the background fixed when scrolling */
   background-position: center;  /* Centers the background */
@@ -267,7 +267,7 @@ body {
   .read-more-btn {
     background: none;
     border: none;
-    color: #635b4b; /* Change this to your desired color */
+    color: #635b4b; 
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: bold;
@@ -276,7 +276,7 @@ body {
   }
   
   .read-more-btn:hover {
-    color: #51493d; /* Change this to a darker shade or a color for hover effect */
+    color: #51493d; /* Darker shade or a color for hover effect */
   }
   /* Signature Section */
   .signature {
@@ -367,7 +367,7 @@ body {
 
 /* Dark Mode */
 .dark-mode {
-  background-image: url("Backround\ dark.png");
+  background-image: url("/images/Backround\ dark.png");
   background-size: cover;    
   background-attachment: fixed; 
   background-position: center; 
