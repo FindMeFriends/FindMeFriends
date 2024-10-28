@@ -1,0 +1,15 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue';
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(231,227,199);
+    background: radial-gradient(circle, rgba(231,227,199,1) 0%, rgba(161,232,186,1) 100%);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}

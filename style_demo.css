@@ -8,7 +8,7 @@
     min-height: 100vh;
     width: 100%;
     background: rgb(189,232,204);
-    background: radial-gradient(rgba(196, 251, 221, 0.5), rgba(209, 248, 229, 0.6)), url(images/floating-transparent-water-bubbles-rruytizl49yjg4y7-rruytizl49yjg4y7.png);
+    background: radial-gradient(rgba(196, 251, 221, 0.5), rgba(209, 248, 229, 0.6));
     background-position: center;
     background-size: cover;
     position: relative;
