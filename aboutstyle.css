@@ -46,20 +46,20 @@ nav img {
 
 /* Logo Circle Container */
 .logo-circle {
-  width: 60px !important; 
-  height: 60px !important; 
-  background-color: #635b4b !important;
-  border-radius: 50% !important; 
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1) !important; 
+  width: 60px; /* Circle width */
+  height: 60px; /* Circle height, same as width for a perfect circle */
+  background-color: #635b4b; /* Circle background color */
+  border-radius: 50%; /* Makes the div circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
 }
 
 /* Adjust the logo image size within the circle */
 .logo-circle img {
-  width: 500%; 
-  height: auto;
+  width: 500%; /* Slightly smaller than the circle */
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* General Reset */
@@ -105,6 +105,35 @@ nav img {
   justify-content: center;
   margin-bottom: 0;
 }
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 
 .hero h1 {
   font-size: 4rem;
@@ -252,4 +281,63 @@ nav img {
 
 .feedback-form button:hover {
   background-color: #87cda5;
+}
+
+/* Scroll-to-Top Button */
+#scrollToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #635b4b;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it’s on top of other elements */
+  transition: opacity 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #51493d;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode .footer-feedback {
+  background-color: #1c1c1c;
+}
+.dark-mode .nav-links ul li a {
+  color: #ffffff;
+}
+
+/* Hover Animation for Team Members */
+.team-member {
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.stats div {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.more-text {
+  display: none;
 }

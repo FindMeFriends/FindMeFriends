@@ -1,0 +1,67 @@
+FindMeFriends Website - Style Guidelines
+The overall look and feel of the FindMeFriends website should be clean, friendly, and easy to navigate. Our design aims to make the user experience intuitive and responsive, with accessible colors and smooth animations.
+
+Colours
+=========== Our color scheme is designed to be light and welcoming. Here are the main colors we’re using:
+
+Background: #e7e3c7 (light beige for a clean look)
+Accent Dark: #635b4b (dark greenish-brown for navbar, buttons, and overlays)
+Accent Light: #a1e8ba (light green for interactive elements like hover borders and buttons)
+Text: #000000 (black for main text) and #ffffff (white for overlay text)
+All text and background colors have been selected for high readability and accessibility.
+
+Typography
+============= We’re using a playful, approachable font combination from Google Fonts:
+
+Fonts: Baloo 2, Comic Neue, and Fredoka
+Headings and Titles: Use bold or semi-bold weights for emphasis
+Body Text: Size around 1rem to keep things easy to read
+Navigation
+===============
+
+Layout: The navigation bar has the logo on the left and links on the right, with flexbox used to space elements evenly.
+Hover Effect: Links have an underline effect that animates with a 0.5s transition.
+Responsiveness: The navbar should adapt smoothly for different screen sizes. A dropdown or mobile-friendly design is recommended as the site grows.
+Team Member Section
+=======================
+
+Layout: Each team member is styled in a .team-member container with a slight shadow. Hovering scales the container up slightly.
+Overlay on Hover: When hovering over a team member’s image, a semi-transparent dark overlay (60% opacity) shows additional text.
+Smooth Transitions: Use transition: opacity 0.3s ease for a smooth fade-in on hover.
+Read More: Each bio has hidden content with the .more-text class. JavaScript toggles this content between "Read More" and "Read Less."
+Footer and Forms
+====================
+
+Form Design: The feedback form uses the .feedback-form class to style input fields consistently.
+Fields: Rounded corners, with a light background and border.
+Submit Button: Light green color that darkens on hover.
+Footer Alignment: All footer content is centered for a balanced look.
+Buttons and Interactive Elements
+====================================
+
+Dark Mode Toggle: A button in the top right of the navbar toggles background and text colors.
+Scroll-to-Top Button: Styled with .scrollToTopBtn, this button appears after scrolling down 200px and is positioned in the bottom right.
+Hover Animations: Interactive elements like buttons use transition: all 0.3s ease for smooth, responsive feedback.
+Modal for Image Enlarging
+=============================
+
+Modal Background: Dark semi-transparent overlay (rgba(0, 0, 0, 0.9)) to focus on the image.
+Close Button: White close button at the top right for visibility.
+JavaScript Basics
+=====================
+
+Event Listeners: JavaScript handles "Read More" buttons, dark mode toggle, and scroll-to-top functionality.
+Naming Conventions: Functions are named clearly, such as toggleDarkMode, toggleReadMore, and scrollToTop.
+DOM Access: Elements are accessed by id or class, with JavaScript placed at the end of the HTML document.
+Responsive Design
+=====================
+
+Media Queries: Set up media queries in CSS to ensure layout adjusts on mobile screens.
+Image Scaling: Images scale with their containers to avoid overflow or stretching.
+Flexbox: Flexbox is used throughout for flexible, responsive layouts, especially in the navbar and team sections.
+File Organization
+=====================
+
+CSS: All styles are in aboutstyle.css.
+JavaScript: All functions are either inline in the HTML or in an external file, scripts.js.
+HTML: HTML follows semantic structure and is saved in about.html.
