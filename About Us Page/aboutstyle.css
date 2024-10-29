@@ -65,8 +65,12 @@ body {
 
 /* Adjust the logo image size within the circle */
 .logo-circle img {
-  width: 500%; /* Slightly smaller than the circle */
+  width: 585%; /* Slightly smaller than the circle */
   height: auto; /* Maintain aspect ratio */
+  position: relative;
+  left: -2px;
+  top: 3px;
+  
 }
 
 /* General Reset */
