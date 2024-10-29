@@ -1,0 +1,303 @@
+/* Navigation Styles */
+nav {
+  display: flex;
+  padding: 1% 3%; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  flex: 0 1 auto;
+  text-align: right;
+  margin-left: -40px; 
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #c6ebd3;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+nav img {
+  width: 300px;
+}
+
+.dark-mode-btn {
+  background: transparent;
+  border: none;
+}
+
+body {
+  background-image: url("/images/Backround.png"); /* Replace with the actual path */
+  background-size: cover;       /* Scales the background to cover the whole screen */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  background-position: center;  /* Centers the background */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+}
+
+/* Logo Circle Container */
+.logo-circle {
+  width: 60px; /* Circle width */
+  height: 60px; /* Circle height, same as width for a perfect circle */
+  background-color: #635b4b; /* Circle background color */
+  border-radius: 50%; /* Makes the div circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
+}
+
+/* Adjust the logo image size within the circle */
+.logo-circle img {
+  width: 500%; /* Slightly smaller than the circle */
+  height: auto; /* Maintain aspect ratio */
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Didot', serif;
+}
+
+body {
+  background-color: #e7e3c7;
+  color: #000000;
+}
+
+
+/* Hero Section */
+.hero {
+  padding: 0;
+  margin-top: -20px;
+}
+
+.hero-image {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 16px 30px;
+}
+
+/* Line Separator */
+.line {
+  border: none;
+  border-top: 1px solid #000;
+  width: 50%;
+  margin: 15px auto;
+}
+
+/* Pricing Page */
+.pricing-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(231, 227, 199, 0.8);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 85%;
+  margin: 40px auto;
+}
+
+/* Pricing Box */
+.single-price {
+  width: 30%;
+  background: #635b4b;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-price:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Price Circle */
+.price {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: #635b4b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.price h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Deals Text */
+.deals h4 {
+  font-size: 14px;
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #e7e3c7;
+}
+
+/* Select Button */
+.single-price a {
+  text-decoration: none;
+  background: #a1e8ba;
+  color: #333;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.single-price:hover a {
+  background: #262626;
+  color: #fff;
+}
+
+/* Footer Styles */
+.footer-feedback {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-feedback h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer-feedback p {
+  font-size: 1rem;
+  color: #a1e8ba;
+  margin-bottom: 20px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.feedback-form button {
+  padding: 10px 20px;
+  background-color: #a1e8ba;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.footer-icons i {
+  font-size: 1.5rem;
+  color: #a1e8ba;
+  transition: color 0.3s;
+}
+
+.footer-icons i:hover {
+  color: #87cda5;
+}
+
+.privacy-policy {
+  display: block;
+  color: #a1e8ba;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.privacy-policy:hover {
+  color: #87cda5;
+  text-decoration: underline;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-image: url("/images/Backround dark.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.dark-mode .dark-mode-btn {
+  color: #fff;
+}
+.dark-mode .single-price {
+  background: #333;
+}
+
+.dark-mode .price {
+  background: #a1e8ba;
+  color: #333;
+}
+
+.dark-mode .deals h4 {
+  color: #87cda5;
+}
+
+.dark-mode .single-price a {
+  background: #87cda5;
+  color: #222;
+}
+
+.dark-mode .footer-feedback {
+  background-color: #222;
+}
+

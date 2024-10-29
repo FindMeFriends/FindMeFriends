@@ -1,0 +1,369 @@
+/* Navigation Styles */
+nav {
+  display: flex;
+  padding: 1% 3%; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  flex: 0 1 auto;
+  text-align: right;
+  margin-left: -40px; 
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #c6ebd3;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+nav img {
+  width: 300px;
+}
+
+.dark-mode-btn {
+  background: transparent;
+  border: none;
+}
+
+body {
+  background-image: url("/images/Backround.png"); /* Replace with the actual path */
+  background-size: cover;       /* Scales the background to cover the whole screen */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  background-position: center;  /* Centers the background */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+}
+
+/* Logo Circle Container */
+.logo-circle {
+  width: 60px; /* Circle width */
+  height: 60px; /* Circle height, same as width for a perfect circle */
+  background-color: #635b4b; /* Circle background color */
+  border-radius: 50%; /* Makes the div circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
+}
+
+/* Adjust the logo image size within the circle */
+.logo-circle img {
+  width: 500%; /* Slightly smaller than the circle */
+  height: auto; /* Maintain aspect ratio */
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Didot', serif;
+}
+
+body {
+  background-color: #e7e3c7;
+  color: #000000;
+}
+
+/* Hero Section */
+.hero {
+  padding: 0;
+  margin-top: -20px;
+}
+
+.hero-image {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 16px 30px;
+  margin-bottom: 5px;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #000;
+  width: 50%;
+  margin: 15px auto;
+}
+
+/* Intro Text Section */
+.intro-text {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+  font-size: 1rem;
+  line-height: 2;
+  text-align: center;
+  color: #333;
+}
+
+/* Download Section */
+.download-content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.download-content .app-info h2 {
+  font-size: 2.4rem;
+  color: #37413a;
+  margin-bottom: 10px;
+}
+
+.download-content .app-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.qr-code {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  display: block;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.download-button {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.apple {
+  background-color: #333;
+}
+
+.android {
+  background-color: #635b4b;
+}
+
+/* Footer Feedback Section */
+.footer-feedback {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 10px;
+  text-align: center;
+  margin: 0; /* Remove space between sections */
+}
+
+.footer-feedback h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.footer-feedback p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #a1e8ba;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.feedback-form button {
+  padding: 10px 20px;
+  background-color: #a1e8ba;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.feedback-form button:hover {
+  background-color: #87cda5;
+}
+
+.footer-icons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-icons i {
+  font-size: 1.5rem;
+  color: #a1e8ba;
+  transition: color 0.3s;
+}
+
+.footer-icons i:hover {
+  color: #87cda5;
+}
+
+/* Privacy Policy Link */
+.privacy-policy {
+  display: block;
+  margin-top: 15px;
+  color: #a1e8ba;
+  text-decoration: none;
+  transition: color 0.3s;
+  margin-bottom: 0px;
+}
+
+.privacy-policy:hover {
+  color: #87cda5;
+  text-decoration: underline;
+}
+
+/* Dark Mode Adjustments */
+.dark-mode {
+  background-image: url("/images/Backround dark.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.dark-mode .footer-feedback {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .footer-feedback p,
+.dark-mode .footer-icons i,
+.dark-mode .privacy-policy {
+  color: #87cda5;
+}
+
+.dark-mode .feedback-form button {
+  background-color: #87cda5;
+  color: #222;
+}
+
+.dark-mode .feedback-form button:hover {
+  background-color: #a1e8ba;
+}
+
+.dark-mode .nav-links ul li a,
+.dark-mode .hero h1,
+.dark-mode .footer-feedback p,
+.dark-mode .download-button {
+  color: #fff;
+}
+.dark-mode .intro-text {
+  color: #c9c7c7;
+}
+
+.download-content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(107, 107, 107, 0.302);
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .download-content .app-info p {
+  font-size: 1rem;
+  color: #c9c7c7;
+  margin-bottom: 20px;
+}
+
+.dark-mode .download-content .app-info h2 {
+  color: #222;
+}
+
+.dark-mode .dark-mode-icon {
+  color: #fff;
+}
+.dark-mode .android {
+  background-color: #37413a;
+}
+
+/* Dark Mode Toggle Icon Button */
+.dark-mode-toggle {
+  padding: 10px;
+  background-color: #a1e8ba;
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode-toggle i {
+  font-size: 1.5rem;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #87cda5;
+}
+
+/* Dark Mode Styles for Button */
+.dark-mode .dark-mode-toggle {
+  background-color: #87cda5;
+  color: #222;
+}
+
+.dark-mode .dark-mode-toggle:hover {
+  background-color: #a1e8ba;
+}

@@ -21,5 +21,6 @@ function openModal(imageSrc) {
       button.innerText = "Read More";
     }
   }
+ 
   
   
