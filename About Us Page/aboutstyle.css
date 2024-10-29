@@ -253,12 +253,18 @@ body {
     margin: 3px 0;
   }
   
-  .text-block .bio {
+  .text-block .light {
     font-size: 0.9rem; 
     line-height: 1.4; 
-    color: #555;
+    color: #0a0a0a;
   }
   
+  .text-block .dark-mode {
+    font-size: 0.9rem; 
+    line-height: 1.4; 
+    color: #d1c4c4;
+  }
+
   /* Read more/less*/
   .more-text {
     display: none; /* Hidden by default */
@@ -365,20 +371,34 @@ body {
   background-color: #51493d;
 }
 
-/* Dark Mode */
+/* Light Mode Styles */
+body {
+  color: black;
+  background-color: #e7e3c7;
+}
+
+.read-more-btn {
+  color: #635b4b; /* Light mode button color */
+}
+
+.read-more-btn:hover {
+  color: #51493d;
+}
+
+/* Dark Mode Styles */
 .dark-mode {
-  background-image: url("/images/Backround\ dark.png");
-  background-size: cover;    
-  background-attachment: fixed; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  color: white; /* Text color for dark mode */
+  background-image: url("/images/Backround dark.png");
 }
-.dark-mode .footer-feedback {
-  background-color: #ffffff;
+
+.dark-mode .read-more-btn {
+  color: #a1e8ba; /* Dark mode button color */
 }
-.dark-mode .nav-links ul li a {
-  color: #ffffff;
+
+.dark-mode .read-more-btn:hover {
+  color: #87cda5;
 }
+
 
 .team {
   max-width: 900px;
