@@ -44,7 +44,7 @@ nav img {
 }
 
 body {
-  background-image: url("/images/Backround.png"); /* Replace with the actual path */
+  background-image: url("/images/Home\ page\ backround\ light\ .jpg"); /* Replace with the actual path */
   background-size: cover;       /* Scales the background to cover the whole screen */
   background-attachment: fixed; /* Keeps the background fixed when scrolling */
   background-position: center;  /* Centers the background */
@@ -65,8 +65,12 @@ body {
 
 /* Adjust the logo image size within the circle */
 .logo-circle img {
-  width: 500%; /* Slightly smaller than the circle */
+  width: 585%; /* Slightly smaller than the circle */
   height: auto; /* Maintain aspect ratio */
+  position: relative;
+  left: -2px;
+  top: 3px;
+  
 }
 
 /* General Reset */
@@ -74,7 +78,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Didot', serif;
+    font-family: 'Nunito', sans-serif;
   }
   
   body {
@@ -409,7 +413,7 @@ body {
 
 .team h2 {
   font-size: 2.4rem; 
-  font-family: 'Didot', serif;
+  font-family: 'Nunito', serif;
   margin-bottom: 20px; 
   color: #37413a;
 }
