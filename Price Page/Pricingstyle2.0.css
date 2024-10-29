@@ -49,7 +49,7 @@ nav img {
 }
 
 body {
-  background-image: url("/images/Backround.png"); /* Replace with the actual path */
+  background-image: url("/images/Pricing\ backround\ light.png"); /* Replace with the actual path */
   background-size: cover;       /* Scales the background to cover the whole screen */
   background-attachment: fixed; /* Keeps the background fixed when scrolling */
   background-position: center;  /* Centers the background */
@@ -271,7 +271,7 @@ body {
 
 /* Dark Mode */
 .dark-mode {
-  background-image: url("/images/Backround dark.png");
+  background-image: url("/images/Pricing\ backround\ dark.png");
   background-size: cover;
   background-attachment: fixed;
 }
