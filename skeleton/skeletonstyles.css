@@ -38,7 +38,7 @@
 .leaf-image-orange img {
     width: 180px; /* Size for the orange leaf */
     position: absolute;
-    transform: translate(1200px, -650px);
+    transform: translate(1150px, -550px);
     text-align: center;
     margin: 20px 0;
 }
@@ -47,7 +47,7 @@
 .leaf-image-yellow img {
     width: 150px; /* Size for the yellow leaf */
     position: absolute;
-    transform: translate(300px, -850px);
+    transform: translate(900px, -900px);
     text-align: center;
     margin: 20px 0;
 }
@@ -109,4 +109,24 @@ nav img{
     z-index: 2;
 }
 
+/* Logo Circle Container */
+.logo-circle {
+    width: 60px; /* Circle width */
+    height: 60px; /* Circle height, same as width for a perfect circle */
+    background-color: #f5c24c; /* Circle background color */
+    border-radius: 50%; /* Makes the div circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
+  }
 
+  /* Adjust the logo image size within the circle */
+.logo-circle img {
+    width: 600%; /* Slightly smaller than the circle */
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    left: -2px;
+    top: 3px;
+    
+  }
