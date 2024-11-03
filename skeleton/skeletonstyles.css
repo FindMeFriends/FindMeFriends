@@ -19,7 +19,6 @@
 }
 
 .header hr{
-<<<<<<< HEAD
     border-top: 5px solid black;
 }
 .hero {
@@ -53,9 +52,7 @@
     margin: 10px auto;
     border: 1px solid #ccc;
 }
-=======
-    border-top: 7px solid black;
-}
+
 
 nav{
     display: flex;
@@ -102,4 +99,3 @@ nav img{
     transform: translate(50%, -50%);
     z-index: 2;
 }
->>>>>>> 7db57f901d6f7b3932a19dbbaa2e0389814c7353
