@@ -43,12 +43,15 @@ nav img {
   width: 300px;
 }
 
+/* Body styles */
 body {
-  background-image: url("/images/Home\ page\ backround\ light\ .jpg"); /* Replace with the actual path */
-  background-size: cover;       /* Scales the background to cover the whole screen */
-  background-attachment: fixed; /* Keeps the background fixed when scrolling */
-  background-position: center;  /* Centers the background */
-  background-repeat: no-repeat; /* Prevents the background from repeating */
+  background-image: url("/images/Home page backround light.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #000;
+  cursor: url('	https://commandaddgirls.com/app/themes/cognitif-starter/assets/dist/images/cursor-white.cur'), auto; /* Cursor change here */
 }
 
 /* Logo Circle Container */
