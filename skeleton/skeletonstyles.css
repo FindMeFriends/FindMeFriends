@@ -15,7 +15,7 @@
     width: 100%;
     background-color: #017c74;
     position: relative;
-    z-index: 2;
+    z-index: -1;
 }
 
 .header hr{
@@ -64,4 +64,6 @@ nav img{
     min-height: 175px;
     text-align: center;
     line-height: 185px;
+    transform: translate(50%, -50%);
+    z-index: 2;
 }
