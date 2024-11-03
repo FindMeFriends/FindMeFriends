@@ -19,6 +19,41 @@
 }
 
 .header hr{
+<<<<<<< HEAD
+    border-top: 5px solid black;
+}
+.hero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Brown Leaf Styling */
+.leaf-image-brown img {
+    width: 150px; /* Size for the brown leaf */
+    transform: translate(-500px, -250px)
+}
+
+/* Orange Leaf Styling */
+.leaf-image-orange img {
+    width: 180px; /* Size for the orange leaf */
+    position: absolute;
+    transform: translate(500px, -500px)
+}
+
+/* Yellow Leaf Styling */
+.leaf-image-yellow img {
+    width: 150px; /* Size for the yellow leaf */
+    position: absolute;
+    transform: translate(300px, -850px)
+}
+
+/* Optional styling for lines */
+.line {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+}
+=======
     border-top: 7px solid black;
 }
 
@@ -67,3 +102,4 @@ nav img{
     transform: translate(50%, -50%);
     z-index: 2;
 }
+>>>>>>> 7db57f901d6f7b3932a19dbbaa2e0389814c7353
