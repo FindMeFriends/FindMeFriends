@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.content-box{
+    min-height: 80vh;
+    width: 100%;
+    background-color: #017c74;
+    position: relative;
+}
+
+.header hr{
+    border-top: 5px solid black;
+}
