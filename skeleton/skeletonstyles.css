@@ -1,12 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-
 }
+
 .header{
     min-height: 100vh;
     width: 100%;
     position: relative;
+    font-family: 'Coiny';
 }
 
 .content-box{
@@ -14,9 +15,11 @@
     width: 100%;
     background-color: #017c74;
     position: relative;
+    z-index: -1;
 }
 
 .header hr{
+<<<<<<< HEAD
     border-top: 5px solid black;
 }
 .hero {
@@ -50,3 +53,53 @@
     margin: 10px auto;
     border: 1px solid #ccc;
 }
+=======
+    border-top: 7px solid black;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 75px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 30px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links i{
+    color: #fff;
+    margin-right: 2px;
+}
+
+.title-box{
+    font-size: 50px;
+    border-radius: 60px;
+    background: black;
+    color: white;
+    width: 450px;
+    min-height: 175px;
+    text-align: center;
+    line-height: 185px;
+    transform: translate(50%, -50%);
+    z-index: 2;
+}
+>>>>>>> 7db57f901d6f7b3932a19dbbaa2e0389814c7353
