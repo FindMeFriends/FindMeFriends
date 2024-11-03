@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-
 }
+
 .header{
     min-height: 100vh;
     width: 100%;
     position: relative;
-    font-family: 'Poppins';
+    font-family: 'Coiny';
 }
 
 .content-box{
@@ -15,10 +15,11 @@
     width: 100%;
     background-color: #017c74;
     position: relative;
+    z-index: 2;
 }
 
 .header hr{
-    border-top: 5px solid black;
+    border-top: 7px solid black;
 }
 
 nav{
@@ -47,4 +48,20 @@ nav img{
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+}
+
+.nav-links i{
+    color: #fff;
+    margin-right: 2px;
+}
+
+.title-box{
+    font-size: 50px;
+    border-radius: 60px;
+    background: black;
+    color: white;
+    width: 450px;
+    min-height: 175px;
+    text-align: center;
+    line-height: 185px;
 }
