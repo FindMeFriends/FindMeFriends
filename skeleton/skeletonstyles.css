@@ -19,7 +19,6 @@
 }
 
 .header hr{
-<<<<<<< HEAD
     border-top: 5px solid black;
 }
 .hero {
@@ -29,8 +28,8 @@
 
 /* Brown Leaf Styling */
 .leaf-image-brown img {
-    width: 150px; /* Size for the brown leaf */
-    transform: translate(-500px, -250px)
+    width: 100px; /* Size for the brown leaf */
+    transform: translate(-500px, -350px)
 }
 
 /* Orange Leaf Styling */
@@ -53,7 +52,8 @@
     margin: 10px auto;
     border: 1px solid #ccc;
 }
-=======
+
+.header hr{
     border-top: 7px solid black;
 }
 
@@ -102,4 +102,5 @@ nav img{
     transform: translate(50%, -50%);
     z-index: 2;
 }
->>>>>>> 7db57f901d6f7b3932a19dbbaa2e0389814c7353
+
+
