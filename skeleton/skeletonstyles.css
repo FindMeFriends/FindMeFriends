@@ -29,7 +29,7 @@
 /* Brown Leaf Styling */
 .leaf-image-brown img {
     width: 100px; /* Size for the brown leaf */
-    transform: translate(-500px, -350px);
+    transform: translate(200px, -350px);
     text-align: center;
     margin: 20px 0;
 }
@@ -38,7 +38,7 @@
 .leaf-image-orange img {
     width: 180px; /* Size for the orange leaf */
     position: absolute;
-    transform: translate(500px, -500px);
+    transform: translate(1200px, -650px);
     text-align: center;
     margin: 20px 0;
 }
