@@ -41,7 +41,7 @@
 .leaf-image-yellow img {
     width: 150px; /* Size for the yellow leaf */
     position: absolute;
-    transform: translate(300px, -800px)
+    transform: translate(300px, -850px)
 }
 
 /* Optional styling for lines */
