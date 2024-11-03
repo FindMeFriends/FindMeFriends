@@ -28,22 +28,28 @@
 
 /* Brown Leaf Styling */
 .leaf-image-brown img {
-    width: 150px; /* Size for the brown leaf */
-    transform: translate(-500px, -250px)
+    width: 100px; /* Size for the brown leaf */
+    transform: translate(-500px, -350px);
+    text-align: center;
+    margin: 20px 0;
 }
 
 /* Orange Leaf Styling */
 .leaf-image-orange img {
     width: 180px; /* Size for the orange leaf */
     position: absolute;
-    transform: translate(500px, -500px)
+    transform: translate(500px, -500px);
+    text-align: center;
+    margin: 20px 0;
 }
 
 /* Yellow Leaf Styling */
 .leaf-image-yellow img {
     width: 150px; /* Size for the yellow leaf */
     position: absolute;
-    transform: translate(300px, -850px)
+    transform: translate(300px, -850px);
+    text-align: center;
+    margin: 20px 0;
 }
 
 /* Optional styling for lines */
@@ -53,6 +59,9 @@
     border: 1px solid #ccc;
 }
 
+.header hr{
+    border-top: 7px solid black;
+}
 
 nav{
     display: flex;
@@ -99,3 +108,5 @@ nav img{
     transform: translate(50%, -50%);
     z-index: 2;
 }
+
+
