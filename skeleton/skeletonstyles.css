@@ -130,3 +130,13 @@ nav img{
     top: 3px;
     
   }
+
+  .deco-image {
+    width: 350px; /* Size for the yellow leaf */
+    position: absolute;
+    transform: translate(210px, -900px);
+    text-align: center;
+    margin: 20px 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
