@@ -1,130 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pricing Table - FindMeFriends</title>
-  <link rel="stylesheet" href="/Price Page/Pricingstyle2.0.css">
-  <link href="https://fonts.googleapis.com/css2?family=Didot&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton</title>
+    <link rel="stylesheet" href="/skeleton/skeletonstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            cursor: url('https://commandaddgirls.com/app/themes/cognitif-starter/assets/dist/images/cursor-white.cur'), auto;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <a href="/index.html">
-      <div class="logo-circle">
-        <img src="/images/logofindme-removebg-preview (1).png" alt="Logo">
-      </div>
-    </a>
-    <div class="nav-links">
-      <ul>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="/Features Page/Features.html">FEATURES</a></li>
-        <li><a href="/Download/download 2.0.html">DOWNLOAD</a></li>
-        <li><a href="/Price Page/Pricing2.0.html">PRICING</a></li>
-        <li><a href="/About Us Page/about.html">ABOUT US</a></li>
-      </ul>
+
+    <section class="header">
+        <div class="content-box">
+            <a href="/Header Page/Header.html">
+                <div class="logo-circle">
+                    <img src="/images/logofindme-removebg-preview (1).png" alt="Logo">
+                </div>
+            </a>
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="/Header Page/Header.html">HOME</a></li>
+                        <li><a href="/Features Page/Features.html">FEATURES</a></li>
+                        <li><a href="/Download/download 2.0.html">DOWNLOAD</a></li>
+                        <li><a href="/Price Page/Pricing2.0.html">PRICING</a></li>
+                        <li><a href="/About Us Page/about.html">ABOUT US</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <hr>
+        <div class="title-box">
+            <h1>Download</h1>
+        </div>
+        <!-- Brown Leaf -->
+        <div class="leaf-image leaf-image-brown">
+            <img src="/images/brown leaf.png" alt="Brown leaf" />
+        </div>
+        
+        <!-- Orange Leaf -->
+        <div class="leaf-image leaf-image-orange">
+            <img src="/images/orange leaf.png" alt="Orange leaf" />
+        </div>
+        
+        <!-- Yellow Leaf -->
+        <div class="leaf-image leaf-image-yellow">
+            <img src="/images/yellow leaf.png" alt="Yellow leaf" />
+        </div>
+    </section>
+
+    <div class="overlap-container">
+        <div class="overlap-color color1"></div>
+        <div class="overlap-color color2"></div>
+        <div class="overlap-image"></div>
     </div>
-    <button onclick="toggleDarkMode()" class="dark-mode-btn">
-      <i class="fa-solid fa-moon" id="dark-mode-icon"></i>
-    </button>
-  </nav>
 
-  <!-- Hero Image Section -->
-  <section class="hero">
-    <div class="hero-image">
-      <h1>PRICING</h1>
+    <!-- Wind Images -->
+    <div class="wind-image wind-image-left">
+        <img src="/images/Wind_option_2.png" alt="Wind image left">
     </div>
-    <hr class="line">
-  </section>
 
-  <!-- Pricing Table Section -->
-  <section class="pricing-page">
-    <div class="wrapper">
-      <div class="single-price">
-        <h1>Basic</h1>
-        <div class="price">
-          <h2>$15</h2>
-        </div>
-        <div class="deals">
-          <h4>Access to essential features<br>for finding friends nearby</h4>
-          <h4>View up to 10 profiles daily</h4>
-          <h4>Basic filters to customize search<br>by age, gender, and distance</h4>
-          <h4>Standard location accuracy<br>within 1 km</h4>
-          <h4>In-app messaging</h4>
-        </div>
-        <a href="#">Select</a>
-      </div>
-
-      <div class="single-price">
-        <h1>Standard</h1>
-        <div class="price">
-          <h2>$35</h2>
-        </div>
-        <div class="deals">
-          <h4>Enhanced profile visibility</h4>
-          <h4>View up to 50 profiles daily</h4>
-          <h4>Advanced filters, including<br>shared interests and hobbies</h4>
-          <h4>Improved location accuracy<br>within 2 km</h4>
-          <h4>Priority in-app support</h4>
-        </div>
-        <a href="#">Select</a>
-      </div>
-
-      <div class="single-price">
-        <h1>Premium</h1>
-        <div class="price">
-          <h2>$55</h2>
-        </div>
-        <div class="deals">
-          <h4>Unlimited profile views</h4>
-          <h4>Premium filters for specific traits and interests</h4>
-          <h4>Ultra-accurate location pinpointing<br>within 2 km</h4>
-          <h4>Boosted profile for top local searches</h4>
-          <h4>Access to "Verified Connections" and ad-free browsing</h4>
-        </div>
-        <a href="#">Select</a>
-      </div>
+    <div class="wind-image wind-image-right">
+        <img src="/images/Wind_option_3.png" alt="Wind image right">
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer-feedback">
-    <h2>Stay Connected</h2>
-    <p>Sign up for updates or send us your feedback!</p>
-    <form action="#" method="post" class="feedback-form">
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <textarea name="message" rows="4" placeholder="Write your feedback..."></textarea>
-      <button type="submit">Submit</button>
-    </form>
-    <div class="footer-icons">
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-linkedin"></i>
-    </div>
-    <a href="Privacy_Policy.html" target="_blank" class="privacy-policy">Privacy Policy</a>
-  </footer>
-
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-    }
-
-    function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-  
-  // Icon toggling
-  const icon = document.getElementById("dark-mode-icon");
-  if (document.body.classList.contains("dark-mode")) {
-    icon.classList.remove("fa-moon");
-    icon.classList.add("fa-sun");
-  } else {
-    icon.classList.remove("fa-sun");
-    icon.classList.add("fa-moon");
-  }
-}
-
-  </script>
 </body>
 </html>
