@@ -197,20 +197,33 @@ nav {
     margin: 20px 0;
 }
 
-
+.about-section{
+    width: 90%;
+    background: #fff;
+    min-height: 40vh;
+    margin: auto;
+}
 
 .about-content {
-    max-width: 600px;
+    width: 45%;
+    background: black;
+    border-radius: 40px;
+    
 }
 
 .about-content h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .about-content p {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .about-image img {
@@ -221,7 +234,6 @@ nav {
 
 /* Team Section */
 .team-section {
-    background-color: #C1A3FF;
     padding: 4rem 2rem;
     color: #333;
     text-align: center;
@@ -258,10 +270,7 @@ nav {
     transition: transform 0.3s ease;
 }
 
-body {
-    background-color: #D6A1E4; /* Matches the purple background */
-    font-family: Arial, sans-serif;
-}
+
 
 .about-us {
     display: flex;

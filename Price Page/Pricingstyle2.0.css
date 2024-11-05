@@ -69,12 +69,7 @@
   padding: 0;
 }
 
-.header {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  font-family: 'Coiny';
-}
+
 
 /* Navigation container */
 nav {
