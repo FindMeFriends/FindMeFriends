@@ -1,20 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:'Fredoka', sans-serif;
 }
 
 .header{
     height: 100vh;
     width: 100%;
     position: relative;
-    font-family: "Fredoka", sans-serif;
 }
 .content-box{
     min-height: 80vh;
     width: 100%;
     background-color: #017c74;
     position: relative;
-    z-index: -1;
 }
 
 .header hr{
@@ -59,30 +58,8 @@
     border: 1px solid #ccc;
 }
 
-.header hr{
-    border-top: 7px solid black;
-}
-
-/* Base styles */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.header {
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-}
 
 /* Navigation container */
-nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
 
 /* Menu Icon for small screens */
 .menu-icon {
@@ -98,12 +75,14 @@ nav {
     top: 0;
     left: 0;
     width: 100%; /* Full width to avoid shifting */
+    height: 7%;
     padding: 10px;
     z-index: 1000; 
     background-color: #017c74;
     justify-content: center;
     display: flex;
     border-bottom: 3px solid black; /* Border only at the bottom */
+    font-family: 'Fredoka';
 }
 
 .nav-links {
@@ -131,7 +110,7 @@ nav .scrolled {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 5px 20px;
     display: inline-block;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -209,7 +188,6 @@ nav .scrolled {
     transform: translate(50%, -50%);
     z-index: 2;
     display: block;
-    font-family: 'Coiny';
 }
 
 /* Logo Circle Container */
@@ -223,6 +201,7 @@ nav .scrolled {
     justify-content: center;
     box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
     border: 3px solid black;
+    z-index: 8;
   }
 
   /* Adjust the logo image size within the circle */
@@ -331,5 +310,4 @@ nav {
 .download-section{
     min-height:100vh;
     width: 100%;
-    background: #f5c24c;
 }
