@@ -7,9 +7,8 @@
     min-height: 100vh;
     width: 100%;
     position: relative;
-    font-family: 'Coiny';
+    font-family: "Fredoka", sans-serif;
 }
-
 .content-box{
     min-height: 80vh;
     width: 100%;
@@ -63,42 +62,132 @@
     border-top: 7px solid black;
 }
 
-nav{
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: 'Coiny';
+}
+
+/* Navigation container */
+nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-}
-nav img{
-    width: 75px;
-}
-
-.nav-links{
-    flex: 1;
-    text-align: right;
-}
-
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 30px;
     position: relative;
 }
 
-.nav-links ul li a{
+/* Menu Icon for small screens */
+.menu-icon {
+    font-size: 24px;
     color: #fff;
-    text-decoration: none;
-    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Hide on larger screens */
 }
 
-.nav-links i{
+/* Navigation Links for right-side pop-out */
+nav {
+    position: fixed;
+    top: 5px;
+    left: 45%;
+    width: 50%;
+    padding: 10px;
+    z-index: 1000;
+    justify-content: center;
+    transition: border 0.3s ease; /* Smooth transition for border */
+    border: none; /* Remove border initially */
+}
+
+nav.scrolled {
+    border: 3px solid black;
+}
+
+
+/* Nav items styling */
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links ul li {
+    position: relative;
+    margin: 20px 0;
+}
+
+.nav-links ul li a {
     color: #fff;
-    margin-right: 2px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect with overlapping background */
+.nav-links ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff7c69;
+    border-radius: 8px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-links ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none; /* Hide on larger screens */
+    }
+
+    .nav-links {
+        position: static;
+        width: auto;
+        height: auto;
+        background: none;
+        box-shadow: none;
+        right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .nav-links ul li a::before {
+        display: none; /* Disable the hover background on larger screens */
+    }
 }
 
 .title-box{
     font-size: 50px;
-    border-radius: 60px;
+    border-radius: 100px;
     background: black;
     color: white;
     width: 480px;
@@ -145,6 +234,7 @@ nav img{
     position: relative;
     width: 480px; 
     height: 270px; 
+    left: -130px;
     margin: 0 auto;
     transform: translate(-300px, -850px);
 }
@@ -162,14 +252,14 @@ nav img{
 .color1 {
     background-color: #f5c24c; /* First layer color */
     top: 20px;
-    left: 20px;
+    left: 40px;
     z-index: 1;
 }
   
 .color2 {
     background-color: #ff7c69; /* Second layer color */
     top: 10px;
-    left: 10px;
+    left: 20px;
     z-index: 2;
 }
   
@@ -195,5 +285,25 @@ nav img{
 }
 
 .wind-image-right img {
-    transform: translate(20px, -1000px); /* Position the image */
+    transform: translate(80px, -1000px); /* Position the image */
 }
+
+nav {
+    position: fixed;
+    top: 5px;
+    left: 45%;
+    width: 50%; /* Full-width across the top */
+    border: 3px solid black;
+    padding: 10px;
+    z-index: 1000; /* Ensures it appears on top of other content */
+    justify-content: center;
+}
+div{
+    
+}
+.logo-circle{
+    position: fixed;
+    top:15px;
+    margin-left: 2%;
+}
+
