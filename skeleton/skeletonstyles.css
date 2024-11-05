@@ -10,7 +10,7 @@
     font-family: "Fredoka", sans-serif;
 }
 .content-box{
-    min-height: 80vh;
+    min-height: 78vh;
     width: 100%;
     background-color: #017c74;
     position: relative;
@@ -102,7 +102,7 @@ nav {
     z-index: 1000;
     justify-content: center;
     transition: border 0.3s ease; /* Smooth transition for border */
-    border: none; /* Remove border initially */
+    border: none; 
 }
 
 nav.scrolled {
@@ -298,12 +298,9 @@ nav {
     z-index: 1000; /* Ensures it appears on top of other content */
     justify-content: center;
 }
-div{
-    
-}
+
 .logo-circle{
     position: fixed;
     top:15px;
     margin-left: 2%;
 }
-
