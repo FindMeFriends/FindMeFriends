@@ -1,303 +1,280 @@
-/* Navigation Styles */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  font-family: "Fredoka", sans-serif;
+  
+}
+.content-box{
+  min-height: 80vh;
+  width: 100%;
+  background-color: #017c74;
+  position: relative;
+  
+}
+
+.header hr{
+  border-top: 5px solid black;
+}
+.hero {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Brown Leaf Styling */
+.leaf-image-brown img {
+  width: 100px; /* Size for the brown leaf */
+  transform: translate(200px, -350px);
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Orange Leaf Styling */
+.leaf-image-orange img {
+  width: 180px; /* Size for the orange leaf */
+  position: absolute;
+  transform: translate(1150px, -550px);
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Yellow Leaf Styling */
+.leaf-image-yellow img {
+  width: 150px; /* Size for the yellow leaf */
+  position: absolute;
+  transform: translate(850px, -800px);
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Optional styling for lines */
+.line {
+  width: 80%;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+}
+
+.header hr{
+  border-top: 7px solid black;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  font-family: 'Coiny';
+}
+
+/* Navigation container */
 nav {
+  background-color: #017c74;
   display: flex;
-  padding: 1% 3%; 
-  justify-content: space-between;
+  
+  align-items: stretch;
+  position: relative;
+  height: 5%;
+  
+  
+}
+
+/* Menu Icon for small screens */
+.menu-icon {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  display: none; /* Hide on larger screens */
+}
+
+
+nav.scrolled {
+  border: 3px solid black;
+}
+.nav-links {
+  position: static;
+  width: auto;
+  height: auto;
+  background: none;
+  box-shadow: none;
+  right: 0;
+  display: flex;
   align-items: center;
 }
 
-.nav-links {
-  flex: 0 1 auto;
-  text-align: right;
-  margin-left: -40px; 
+
+/* Nav items styling */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
 }
 
 .nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
   position: relative;
+  margin: 35px ;
 }
 
 .nav-links ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
+  
+  display: inline-block;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-.nav-links ul li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #c6ebd3;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.nav-links ul li:hover::after {
+/* Hover effect with overlapping background */
+.nav-links ul li a::before {
+  content: '';
+  position: absolute;
   width: 100%;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 8px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
 }
 
-nav img {
-  width: 300px;
+.nav-links ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
-.dark-mode-btn {
-  background: transparent;
-  border: none;
-}
 
-body {
-  background-image: url("/images/Pricing\ backround\ light.png"); /* Replace with the actual path */
-  background-size: cover;       /* Scales the background to cover the whole screen */
-  background-attachment: fixed; /* Keeps the background fixed when scrolling */
-  background-position: center;  /* Centers the background */
-  background-repeat: no-repeat; /* Prevents the background from repeating */
+
+.title-box{
+  font-size: 50px;
+  border-radius: 100px;
+  background: black;
+  color: white;
+  width: 480px;
+  min-height: 175px;
+  text-align: center;
+  line-height: 185px;
+  transform: translate(50%, -50%);
+  z-index: 2;
 }
 
 /* Logo Circle Container */
 .logo-circle {
   width: 60px; /* Circle width */
   height: 60px; /* Circle height, same as width for a perfect circle */
-  background-color: #635b4b; /* Circle background color */
+  background-color: #f5c24c; /* Circle background color */
   border-radius: 50%; /* Makes the div circular */
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
+  border: 3px solid black;
+  z-index: 8;
 }
 
 /* Adjust the logo image size within the circle */
 .logo-circle img {
-  width: 500%; /* Slightly smaller than the circle */
+  width: 600%; /* Slightly smaller than the circle */
   height: auto; /* Maintain aspect ratio */
-}
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Didot', serif;
+  position: relative;
+  left: -2px;
+  top: 3px;
+  
 }
 
-body {
-  background-color: #e7e3c7;
-  color: #000000;
-}
-
-
-/* Hero Section */
-.hero {
-  padding: 0;
-  margin-top: -20px;
-}
-
-.hero-image {
-  height: 30vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero h1 {
-  font-size: 4rem;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 16px 30px;
-}
-
-/* Line Separator */
-.line {
-  border: none;
-  border-top: 1px solid #000;
-  width: 50%;
-  margin: 15px auto;
-}
-
-/* Pricing Page */
-.pricing-page {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(231, 227, 199, 0.8);
-}
-
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  width: 85%;
-  margin: 40px auto;
-}
-
-/* Pricing Box */
-.single-price {
-  width: 30%;
-  background: #635b4b;
-  color: #fff;
-  border-radius: 10px;
-  padding: 20px;
+.deco-image {
+  width: 350px; /* Size for the yellow leaf */
+  position: absolute;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 
-.single-price:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-/* Price Circle */
-.price {
-  width: 100px;
-  height: 100px;
-  background: #fff;
-  color: #635b4b;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto;
-}
-
-.price h2 {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-/* Deals Text */
-.deals h4 {
-  font-size: 14px;
-  margin: 10px 0;
-  line-height: 1.6;
-  color: #e7e3c7;
-}
-
-/* Select Button */
-.single-price a {
-  text-decoration: none;
-  background: #a1e8ba;
-  color: #333;
-  padding: 10px 30px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: inline-block;
-  transition: background 0.3s ease;
-}
-
-.single-price:hover a {
-  background: #262626;
-  color: #fff;
-}
-
-/* Footer Styles */
-.footer-feedback {
-  background-color: #333;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.footer-feedback h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.footer-feedback p {
-  font-size: 1rem;
-  color: #a1e8ba;
-  margin-bottom: 20px;
-}
-
-.feedback-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  max-width: 600px;
+.overlap-container {
+  position: relative;
+  width: 480px; 
+  height: 270px; 
+  left: -130px;
   margin: 0 auto;
+  transform: translate(-300px, -850px);
 }
 
-.feedback-form input[type="email"],
-.feedback-form textarea {
+.overlap-color, .overlap-image {
+  position: absolute;
   width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
+  height: 100%;
+  border-radius: 15px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  border: 3px solid black; /* Black outline */
 }
 
-.feedback-form button {
-  padding: 10px 20px;
-  background-color: #a1e8ba;
-  color: #333;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
+/* Color Layers */
+.color1 {
+  background-color: #f5c24c; /* First layer color */
+  top: 20px;
+  left: 40px;
+  z-index: 1;
 }
 
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 15px;
+.color2 {
+  background-color: #ff7c69; /* Second layer color */
+  top: 10px;
+  left: 20px;
+  z-index: 2;
 }
 
-.footer-icons i {
-  font-size: 1.5rem;
-  color: #a1e8ba;
-  transition: color 0.3s;
-}
-
-.footer-icons i:hover {
-  color: #87cda5;
-}
-
-.privacy-policy {
-  display: block;
-  color: #a1e8ba;
-  margin-top: 20px;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.privacy-policy:hover {
-  color: #87cda5;
-  text-decoration: underline;
-}
-
-/* Dark Mode */
-.dark-mode {
-  background-image: url("/images/Pricing\ backround\ dark.png");
+/* Image Layer */
+.overlap-image {
+  background-image: url('/images/skeleton_image.png'); /* Replace with your image path */
   background-size: cover;
-  background-attachment: fixed;
+  background-position: center;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 
-.dark-mode .dark-mode-btn {
-  color: #fff;
-}
-.dark-mode .single-price {
-  background: #333;
-}
-
-.dark-mode .price {
-  background: #a1e8ba;
-  color: #333;
+/* Common Wind Image Styling */
+.wind-image img {
+  position: absolute;
+  width: 120px; /* Adjust size as needed */
 }
 
-.dark-mode .deals h4 {
-  color: #87cda5;
+/* Position each wind image individually */
+.wind-image-left img {
+  transform: translate(1100px, -800px); /* Position the image */
 }
 
-.dark-mode .single-price a {
-  background: #87cda5;
-  color: #222;
+.wind-image-right img {
+  transform: translate(80px, -1000px); /* Position the image */
 }
 
-.dark-mode .footer-feedback {
-  background-color: #222;
+nav {
+  position: fixed;
+  top: 5px;
+  left: 45%;
+  width: 50%; /* Full-width across the top */
+  border: 3px solid black;
+  padding: 10px;
+  z-index: 1000; /* Ensures it appears on top of other content */
+  justify-content: center;
+}
+div{
+  
+}
+.logo-circle{
+  position: fixed;
+  top:15px;
+  margin-left: 2%;
 }
 
