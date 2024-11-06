@@ -21,9 +21,16 @@
   position: relative;
   
 }
+.offers{
+  height: 95vh;
+  width: 100%;
+  position: relative;
+  background-color: #017c74;
+}
 
 hr{
-  border-top: 7px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
 }
 
 
@@ -190,6 +197,121 @@ nav.scrolled {
   position: relative;
   z-index: 1;
 }
+
+.price-image{
+  width: 600px;
+  height: 400px;
+  background-image: url(/images/Price.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #f5c24c;
+  border-style: solid;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translate(30px,-475px)
+}
+
+.offer1{
+  height: 475px;
+  width: 275px;
+  background-color: #000000;
+  color: white;
+  border-radius: 30px;
+  transform: translate(170px,50px);
+}
+.offer1 h1{
+  font-size: 40px;
+  font-family: "Coiny", system-ui;
+  text-align: center;
+  
+}
+
+.offer1 h2{
+  font-size: 16px;
+  text-align: left;
+  padding: 20px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.offer1 h3{
+  font-size: 16px;
+  text-align: left;
+  padding: 20px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.offer2{
+  height: 475px;
+  width: 275px;
+  background-color: #000000;
+  color: white;
+  border-radius: 30px;
+  transform: translate(620px,-300px);
+}
+.offer2 h1{
+  font-size: 40px;
+  font-family: "Coiny", system-ui;
+  text-align: center;
+  
+}
+.offer2 h2{
+  font-size: 16px;
+  text-align: left;
+  padding: 20px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.offer2 h3{
+  font-size: 16px;
+  text-align: left;
+  padding: 20px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.offer3{
+  height: 475px;
+  width: 275px;
+  background-color: #000000;
+  color: white;
+  border-radius: 30px;
+  transform: translate(1070px,-900px);
+}
+.offer3 h1{
+  font-size: 40px;
+  font-family: "Coiny", system-ui;
+  text-align: center;
+  
+}
+
+.offer3 h2{
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  font-family: "Poppins", serif;
+  font-weight: 1000;
+  font-style: normal;
+  color: gold;
+}
+
+.offer3 h3{
+  font-size: 16px;
+  text-align: left;
+  padding: 20px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+
 /* Logo Circle Container */
 .logo-circle {
   width: 60px; /* Circle width */
