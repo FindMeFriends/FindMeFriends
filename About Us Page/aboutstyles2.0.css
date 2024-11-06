@@ -2,80 +2,282 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #FF6B6B;
-    padding: 1rem;
-    text-align: right;
+.header{
+    height: 100vh;
+    width: 100%;
+    background: #fff;
 }
 
-.navbar ul {
-    list-style: none;
+
+.header hr{
+    border-top: 5px solid black;
+}
+
+.content-box{
+    min-height: 80vh;
+    width: 100%;
+    background-color: #786951;
+    position: relative;
+}
+
+/* Navigation Links for right-side pop-out */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width to avoid shifting */
+    height: 7%;
+    padding: 10px;
+    z-index: 1000; 
+    background-color: #786951;
+    justify-content: center;
     display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
+    border-bottom: 3px solid black; /* Border only at the bottom */
+    font-family: "Fredoka", sans-serif;
 }
 
-.navbar a {
+.nav-links {
+    z-index: 10;
+}
+
+nav .scrolled {
+    border: 3px solid black;
+}
+
+
+/* Nav items styling */
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links ul li {
+    position: relative;
+    margin: 20px 0;
+}
+
+.nav-links ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #fff;
+    font-size: 18px;
+    padding: 5px 20px;
+    display: inline-block;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-.navbar .active {
-    color: #FFE66D;
-}
-
-/* About Us Section */
-.about-section {
-    background-color: #FF6B6B;
-    padding: 4rem 2rem;
-    color: #fff;
+/* Logo Circle Container */
+.logo-circle {
+    width: 60px; /* Circle width */
+    height: 60px; /* Circle height, same as width for a perfect circle */
+    background-color: #017c74; /* Circle background color */
+    border-radius: 50%; /* Makes the div circular */
     display: flex;
     align-items: center;
-    gap: 2rem;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
+    border: 3px solid black;
+    z-index: 8;
+  }
+
+  /* Adjust the logo image size within the circle */
+.logo-circle img {
+    width: 600%; /* Slightly smaller than the circle */
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    left: -2px;
+    top: 3px;
+  }
+  .nav-links {
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    right: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Fredoka', 'Sans-Serif';
+}
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none; /* Hide on larger screens */
+    }
+
+    .nav-links {
+        position: static;
+        width: auto;
+        height: auto;
+        background: none;
+        box-shadow: none;
+        right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .nav-links ul li a::before {
+        display: none; /* Disable the hover background on larger screens */
+    }
 }
 
+.hero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav {
+    position: fixed;
+    top: 5px;
+    left: 45%;
+    width: 50%; /* Full-width across the top */
+    border: 3px solid black;
+    padding: 10px;
+    z-index: 1000; /* Ensures it appears on top of other content */
+    justify-content: center;
+    font-family: ;
+}
+
+.logo-circle{
+    position: fixed;
+    top:15px;
+    margin-left: 2%;
+}
+
+
+.title-box{
+    font-size: 50px;
+    border-radius: 100px;
+    background: black;
+    color: white;
+    width: 480px;
+    min-height: 175px;
+    text-align: center;
+    line-height: 185px;
+    transform: translate(150%, -50%);
+    z-index: 2;
+    display: block;
+    font-family: "Coiny", system-ui;
+;
+}
+
+
+/* Brown Leaf Styling */
+.leaf-image-brown img {
+    width: 100px; /* Size for the brown leaf */
+    transform: translate(200px, -350px);
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+/* Orange Leaf Styling */
+.leaf-image-orange img {
+    width: 180px; /* Size for the orange leaf */
+    position: absolute;
+    transform: translate(1150px, -550px);
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Yellow Leaf Styling */
+.leaf-image-yellow img {
+    width: 150px; /* Size for the yellow leaf */
+    position: absolute;
+    transform: translate(850px, -800px);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about-section{
+    width: 100%;
+    background: #fff;
+    min-height: 40vh;
+    margin: auto;
+}
+.about-section-div{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+.about-section hr{
+    border-top: 5px solid black;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+}
 .about-content {
-    max-width: 600px;
+    width: 50%;
+    background: black;
+    border-radius: 40px;
+    flex-basis: 40%;
+    margin-left: 5%;
 }
 
 .about-content h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #fff;
 }
 
 .about-content p {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #fff;
 }
 
 .about-image img {
     border-radius: 20px;
-    width: 400px;
-    height: auto;
+    width: 600px;
+    margin-left: 10%;
+    flex-basis: 40%;
+}
+
+.deco-image{
+    width: 500px;
+    border: 
+    z-index: 3;
 }
 
 /* Team Section */
 .team-section {
-    background-color: #C1A3FF;
     padding: 4rem 2rem;
     color: #333;
     text-align: center;
+    background-color: #f5c24c;
 }
 
+.team-section hr{
+    margin-top: 0;
+    border-top: 5px solid black;;
+}
 .team-section h1 {
-    font-size: 3rem;
+    font-size: 62px;
     margin-bottom: 2rem;
     color: #333;
+    text-align: left;
+    margin-left: 10%;
 }
 
-.team-member {
-    background-color: #FFE66D;
+.team-member{
     padding: 1rem;
     margin: 1rem auto;
     width: 300px;
@@ -99,11 +301,21 @@
     transition: transform 0.3s ease;
 }
 
-body {
-    background-color: #D6A1E4; /* Matches the purple background */
-    font-family: Arial, sans-serif;
+#member-one{
+    transform:translate(-75%, 0)
 }
-
+#member-two{
+    transform:translate(150%, 0)
+}
+#member-three{
+    transform:translate(-110%, 0)
+}
+#member-four{
+    transform:translate(75%, 0)
+}
+#member-five{
+    transform:translate(-75%, 0)
+}
 .about-us {
     display: flex;
     flex-direction: column;
@@ -120,7 +332,8 @@ body {
     text-align: center;
     font-weight: bold;
     border-radius: 5px;
-    box-shadow: 6px 6px 0 #FDDC67, 12px 12px 0 #FA897B, 18px 18px 0 #FFFFFF;
+    border: 0.5px solid black;
+    box-shadow: 6px 6px 0 #ff7c69 , 12px 12px 0 #017c74, 18px 18px 0 #FFFFFF;
 }
 
 .team-member .role {
