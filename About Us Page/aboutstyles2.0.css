@@ -18,7 +18,7 @@
 .content-box{
     min-height: 80vh;
     width: 100%;
-    background-color: #685d4b;
+    background-color: #786951;
     position: relative;
 }
 
@@ -31,7 +31,7 @@ nav {
     height: 7%;
     padding: 10px;
     z-index: 1000; 
-    background-color: #685d4b;
+    background-color: #786951;
     justify-content: center;
     display: flex;
     border-bottom: 3px solid black; /* Border only at the bottom */
@@ -144,15 +144,6 @@ nav {
     top:15px;
     margin-left: 2%;
 }
-/* About Us Section */
-.about-section {
-    background-color: #FF6B6B;
-    padding: 4rem 2rem;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
 
 
 .title-box{
@@ -198,17 +189,29 @@ nav {
 }
 
 .about-section{
-    width: 90%;
+    width: 100%;
     background: #fff;
     min-height: 40vh;
     margin: auto;
 }
-
+.about-section-div{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+.about-section hr{
+    border-top: 5px solid black;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+}
 .about-content {
-    width: 45%;
+    width: 50%;
     background: black;
     border-radius: 40px;
-    
+    flex-basis: 40%;
+    margin-left: 5%;
 }
 
 .about-content h1 {
@@ -217,6 +220,7 @@ nav {
     margin-bottom: 3%;
     margin-left: 10%;
     margin-right: 10%;
+    color: #fff;
 }
 
 .about-content p {
@@ -224,12 +228,14 @@ nav {
     margin-bottom: 10%;
     margin-left: 10%;
     margin-right: 10%;
+    color: #fff;
 }
 
 .about-image img {
     border-radius: 20px;
-    width: 400px;
-    height: auto;
+    width: 600px;
+    margin-left: 10%;
+    flex-basis: 40%;
 }
 
 /* Team Section */
@@ -237,16 +243,22 @@ nav {
     padding: 4rem 2rem;
     color: #333;
     text-align: center;
+    background-color: #f5c24c;
 }
 
+.team-section hr{
+    margin-top: 0;
+    border-top: 5px solid black;;
+}
 .team-section h1 {
-    font-size: 3rem;
+    font-size: 62px;
     margin-bottom: 2rem;
     color: #333;
+    text-align: left;
+    margin-left: 10%;
 }
 
-.team-member {
-    background-color: #FFE66D;
+.team-member{
     padding: 1rem;
     margin: 1rem auto;
     width: 300px;
@@ -270,8 +282,21 @@ nav {
     transition: transform 0.3s ease;
 }
 
-
-
+#member-one{
+    transform:translate(-75%, 0)
+}
+#member-two{
+    transform:translate(150%, 0)
+}
+#member-three{
+    transform:translate(-110%, 0)
+}
+#member-four{
+    transform:translate(75%, 0)
+}
+#member-five{
+    transform:translate(-75%, 0)
+}
 .about-us {
     display: flex;
     flex-direction: column;
@@ -288,7 +313,8 @@ nav {
     text-align: center;
     font-weight: bold;
     border-radius: 5px;
-    box-shadow: 6px 6px 0 #FDDC67, 12px 12px 0 #FA897B, 18px 18px 0 #FFFFFF;
+    border: 0.5px solid black;
+    box-shadow: 6px 6px 0 #ff7c69 , 12px 12px 0 #017c74, 18px 18px 0 #FFFFFF;
 }
 
 .team-member .role {
