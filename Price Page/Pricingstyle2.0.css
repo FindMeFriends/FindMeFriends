@@ -7,7 +7,6 @@
   min-height: 100vh;
   width: 100%;
   position: relative;
-  font-family: "Fredoka", sans-serif;
   
 }
 .content-box{
@@ -19,12 +18,9 @@
 }
 
 .header hr{
-  border-top: 5px solid black;
+  border-top: 7px solid black;
 }
-.hero {
-  text-align: center;
-  margin: 20px 0;
-}
+
 
 /* Brown Leaf Styling */
 .leaf-image-brown img {
@@ -51,24 +47,6 @@
   text-align: center;
   margin: 20px 0;
 }
-
-/* Optional styling for lines */
-.line {
-  width: 80%;
-  margin: 10px auto;
-  border: 1px solid #ccc;
-}
-
-.header hr{
-  border-top: 7px solid black;
-}
-
-/* Base styles */
-* {
-  margin: 0;
-  padding: 0;
-}
-
 
 
 /* Navigation container */
@@ -157,6 +135,7 @@ nav.scrolled {
   background: black;
   color: white;
   width: 480px;
+  font-family: "Coiny", system-ui;
   min-height: 175px;
   text-align: center;
   line-height: 185px;
@@ -168,13 +147,13 @@ nav.scrolled {
 .logo-circle {
   width: 60px; /* Circle width */
   height: 60px; /* Circle height, same as width for a perfect circle */
-  background-color: #f5c24c; /* Circle background color */
+  background-color: #000000; /* Circle background color */
   border-radius: 50%; /* Makes the div circular */
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
-  border: 3px solid black;
+  border: 3px solid #f5c24c;
   z-index: 8;
 }
 

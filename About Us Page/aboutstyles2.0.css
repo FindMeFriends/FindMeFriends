@@ -35,7 +35,7 @@ nav {
     justify-content: center;
     display: flex;
     border-bottom: 3px solid black; /* Border only at the bottom */
-    font-family: 'Fredoka';
+    font-family: "Fredoka", sans-serif;
 }
 
 .nav-links {
@@ -91,7 +91,17 @@ nav .scrolled {
     left: -2px;
     top: 3px;
   }
-
+  .nav-links {
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    right: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Fredoka', 'Sans-Serif';
+}
 @media (min-width: 768px) {
     .menu-icon {
         display: none; /* Hide on larger screens */
@@ -137,6 +147,7 @@ nav {
     padding: 10px;
     z-index: 1000; /* Ensures it appears on top of other content */
     justify-content: center;
+    font-family: ;
 }
 
 .logo-circle{
@@ -158,6 +169,8 @@ nav {
     transform: translate(150%, -50%);
     z-index: 2;
     display: block;
+    font-family: "Coiny", system-ui;
+;
 }
 
 
@@ -236,6 +249,12 @@ nav {
     width: 600px;
     margin-left: 10%;
     flex-basis: 40%;
+}
+
+.deco-image{
+    width: 500px;
+    border: 
+    z-index: 3;
 }
 
 /* Team Section */
