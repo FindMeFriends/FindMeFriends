@@ -4,20 +4,25 @@
 }
 
 .header{
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   position: relative;
   
+}
+.content1{
+  height: 60vh;
+  width: 100%;
+  position: relative;
 }
 .content-box{
   min-height: 80vh;
   width: 100%;
-  background-color: #017c74;
+  background-color: #f5c24c;
   position: relative;
   
 }
 
-.header hr{
+hr{
   border-top: 7px solid black;
 }
 
@@ -25,7 +30,7 @@
 /* Brown Leaf Styling */
 .leaf-image-brown img {
   width: 100px; /* Size for the brown leaf */
-  transform: translate(200px, -350px);
+  transform: translate(1200px, -300px);
   text-align: center;
   margin: 20px 0;
 }
@@ -34,7 +39,7 @@
 .leaf-image-orange img {
   width: 180px; /* Size for the orange leaf */
   position: absolute;
-  transform: translate(1150px, -550px);
+  transform: translate(200px, -1000px);
   text-align: center;
   margin: 20px 0;
 }
@@ -51,7 +56,7 @@
 
 /* Navigation container */
 nav {
-  background-color: #017c74;
+  background-color: #f5c24c;
   display: flex;
   
   align-items: stretch;
@@ -140,9 +145,51 @@ nav.scrolled {
   text-align: center;
   line-height: 185px;
   transform: translate(50%, -50%);
-  z-index: 2;
+  z-index: 3;
 }
 
+.text-box1{
+  font-size: 18px;
+  color: #000000;
+  border-radius: 30px;
+  border-style: solid;
+  background-color: white;
+  text-align: center;
+  width: 800px;
+  height: 150px;
+  box-sizing: border-box;
+  transform: translate(700px,50px);
+  padding-top: 57px;
+  position: relative;
+  z-index: 3;
+}
+
+.text-box1 h1{
+  font-size: 30;
+  font-family: "Ferdoka", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.text-box1colour1{
+  width: 800px;
+  height: 150px;
+  background-color: #ff7c69;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(690px,-95px);
+  position: relative;
+  z-index: 2;
+}
+.text-box1colour2{
+  width: 800px;
+  height: 150px;
+  background-color: #017c74;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(680px,-240px);
+  position: relative;
+  z-index: 1;
+}
 /* Logo Circle Container */
 .logo-circle {
   width: 60px; /* Circle width */
@@ -196,7 +243,7 @@ nav.scrolled {
 
 /* Color Layers */
 .color1 {
-  background-color: #f5c24c; /* First layer color */
+  background-color: #017c74; /* First layer color */
   top: 20px;
   left: 40px;
   z-index: 1;
@@ -227,11 +274,11 @@ nav.scrolled {
 
 /* Position each wind image individually */
 .wind-image-left img {
-  transform: translate(1100px, -800px); /* Position the image */
+  transform: translate(1000px, -750px); /* Position the image */
 }
 
 .wind-image-right img {
-  transform: translate(80px, -1000px); /* Position the image */
+  transform: translate(400px, -900px); /* Position the image */
 }
 
 nav {
