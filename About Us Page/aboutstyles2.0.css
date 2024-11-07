@@ -242,6 +242,7 @@ nav {
     margin-left: 10%;
     margin-right: 10%;
     color: #fff;
+    font-family: "Fredoka", sans-serif;
 }
 
 .about-image img {
@@ -265,25 +266,66 @@ nav {
     background-color: #f5c24c;
 }
 
-.team-section hr{
-    margin-top: 0;
-    border-top: 5px solid black;;
+.team-container {
+    position: relative;
+    background-image: url('/images/Big Tree.png'); 
+    background-size: 75%; 
+    background-position: center top; 
+    background-repeat: no-repeat; 
+    padding-top: 2rem; 
 }
+
+#member-eight {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 900px;
+    margin-right: 100px;
+}
+
+
+#member-nine {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 200px;
+    margin-right: 0px;
+}
+
+#member-ten {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 780px;
+    margin-right: 0px;
+}
+
+
+#member-six {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 1000px;
+    margin-right: 0px;
+}
+
+#member-seven {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
 .team-section h1 {
     font-size: 62px;
-    margin-bottom: 2rem;
-    color: #333;
+    margin-bottom: 100px;
+    color: #333333;
     text-align: left;
     margin-left: 10%;
 }
 
-.team-member{
-    padding: 1rem;
-    margin: 1rem auto;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+.team-section img{
+    width: 800px;
+    height: 800px;
+    position: relative;
 }
+
 
 .team-member h2 {
     font-size: 1.5rem;
@@ -295,6 +337,22 @@ nav {
     color: #333;
 }
 
+.team-member img {
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+    text-align: left;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #000000;
+}
+
+
+
+
+
 /* Hover Effects */
 .team-member:hover {
     transform: scale(1.05);
@@ -302,16 +360,16 @@ nav {
 }
 
 #member-one{
-    transform:translate(-75%, 0)
+    transform:translate(-45%, 0)
 }
 #member-two{
     transform:translate(150%, 0)
 }
 #member-three{
-    transform:translate(-110%, 0)
+    transform:translate(-140%, 0)
 }
 #member-four{
-    transform:translate(75%, 0)
+    transform:translate(120%, 0)
 }
 #member-five{
     transform:translate(-75%, 0)
