@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -7,14 +7,13 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  
 }
+
 .content-box{
-  min-height: 80vh;
+  height: 80vh;
   width: 100%;
   background-color: #017c74;
   position: relative;
-  
 }
 
 .header hr{
@@ -59,8 +58,6 @@ nav {
   align-items: stretch;
   position: relative;
   height: 5%;
-  
-  
 }
 
 /* Menu Icon for small screens */
@@ -75,6 +72,7 @@ nav {
 nav.scrolled {
   border: 3px solid black;
 }
+
 .nav-links {
   position: static;
   width: auto;
@@ -129,8 +127,6 @@ nav.scrolled {
   transform-origin: left;
 }
 
-
-
 .title-box{
   font-size: 50px;
   border-radius: 100px;
@@ -184,7 +180,7 @@ nav.scrolled {
   height: 270px; 
   left: -130px;
   margin: 0 auto;
-  transform: translate(-300px, -850px);
+  transform: translate(214px, -814px);
   display:inline-block
 }
 
@@ -260,3 +256,39 @@ nav {
   margin-left: 2%;
 }
 
+.download-section{
+  height: 60vh;
+}
+
+.download-section-div{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5%;
+  justify-content: space-between;
+}
+
+.text-box{
+  background: black;
+  border-radius: 40px;
+  flex-basis: 35%;
+  margin-left: 5%;
+}
+
+.text-box h1{
+  font-size: 3rem;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: #fff;
+  text-align: center;
+}
+
+.text-box img{
+  width: 50%;
+  margin-bottom: 10%;
+  margin-left: 25%;
+  margin-right: 25%
+  
+}

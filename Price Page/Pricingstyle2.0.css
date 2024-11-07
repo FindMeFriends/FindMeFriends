@@ -70,7 +70,7 @@ nav {
 }
 
 
-nav.scrolled {
+nav .scrolled {
   border: 3px solid black;
 }
 .nav-links {
