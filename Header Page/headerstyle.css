@@ -1,280 +1,250 @@
 *{
-  margin: 0;
-  padding: 0;
-}
-
-.header{
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  font-family: "Fredoka", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
   
-}
-.content-box{
-  min-height: 80vh;
-  width: 100%;
-  background-color: #017c74;
-  position: relative;
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    
+  }
+  .content-box{
+    min-height: 80vh;
+    width: 100%;
+    background-color:  #68b893;
+    position: relative;
+    
+  }
+
+  .content-box-2{
+    min-height: 80vh;
+    width: 100%;
+    background-color:  #ff7c69;
+    position: relative;
+  }
+
+  .second header hr{
+    border-bottom: 2px solid black;
+  }
+
+  .header hr{
+    border-top: 7px solid black;
+  }
+
+  /* Navigation container */
+  nav {
+    background-color:  #68b893;
+    display: flex;
+    
+    align-items: stretch;
+    position: relative;
+    height: 5%; 
+    
+  }
   
+  /* Menu Icon for small screens */
+  .menu-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none; /* Hide on larger screens */
+  }
+  
+  
+  nav.scrolled {
+    border: 3px solid black;
+  }
+  .nav-links {
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  
+  /* Nav items styling */
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+  }
+  
+  .nav-links ul li {
+    position: relative;
+    margin: 35px ;
+  }
+  
+  .nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect with overlapping background */
+  .nav-links ul li a::before {
+    content: '';
+    position: absolute;
+    
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 8px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-links ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  
+  .title-box{
+    font-size: 38px;
+    border-radius: 100px;
+    background: black;
+    color: white;
+    width: 650px;
+    font-family: "Coiny", system-ui;
+    min-height: 175px;
+    text-align: center;
+    line-height: 185px;
+    transform: translate(27%, -82%);
+    z-index: 2;
+    position: absolute;
+  }
+
+  .Cover_one {
+    transform: translate(23%, -64%) scale(1.3);
+    z-index: 1;
+    position:absolute;
+  }
+
+
+  .Cover_two_mini {
+    transform: translate(89%, 13%) scale(0.5);
+    z-index: 2;
+    position:absolute;
+  }
+
+
+  .Cover_three_mini {
+    transform: translate(-8%, 13%) scale(0.5);
+    z-index: 2;
+    position:absolute;
+  }
+
+  .text-box1{
+    font-size: 18px;
+    color: #000000;
+    border-radius: 30px;
+    border-style: solid;
+    background-color: white;
+    text-align: center;
+    width: 798px;
+    height: 277px;
+    box-sizing: border-box;
+    transform: translate(600px,-2px);
+    padding-top: 57px;
+    position: relative;
+  }
+  
+  .text-box1 h1{
+    font-size: 20;
+    font-family: "Ferdoka", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .bold-line {
+    font-weight: bold;
+
 }
 
-.header hr{
-  border-top: 5px solid black;
-}
-.hero {
-  text-align: center;
-  margin: 20px 0;
-}
-
-/* Brown Leaf Styling */
-.leaf-image-brown img {
-  width: 100px; /* Size for the brown leaf */
-  transform: translate(200px, -350px);
-  text-align: center;
-  margin: 20px 0;
-}
-
-/* Orange Leaf Styling */
-.leaf-image-orange img {
-  width: 180px; /* Size for the orange leaf */
+.text-box1colour1{
+  width: 767px;
+  height: 260px;
+  background-color:  #f5c24c;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(640px,-255px);
   position: absolute;
-  transform: translate(1150px, -550px);
-  text-align: center;
-  margin: 20px 0;
-}
-
-/* Yellow Leaf Styling */
-.leaf-image-yellow img {
-  width: 150px; /* Size for the yellow leaf */
-  position: absolute;
-  transform: translate(850px, -800px);
-  text-align: center;
-  margin: 20px 0;
-}
-
-/* Optional styling for lines */
-.line {
-  width: 80%;
-  margin: 10px auto;
-  border: 1px solid #ccc;
-}
-
-.header hr{
-  border-top: 7px solid black;
-}
-
-/* Base styles */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.header {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  font-family: 'Coiny';
-}
-
-/* Navigation container */
-nav {
-  background-color: #017c74;
-  display: flex;
-  
-  align-items: stretch;
-  position: relative;
-  height: 5%;
-  
-  
-}
-
-/* Menu Icon for small screens */
-.menu-icon {
-  font-size: 24px;
-  color: #fff;
-  cursor: pointer;
-  display: none; /* Hide on larger screens */
-}
-
-
-nav.scrolled {
-  border: 3px solid black;
-}
-.nav-links {
-  position: static;
-  width: auto;
-  height: auto;
-  background: none;
-  box-shadow: none;
-  right: 0;
-  display: flex;
-  align-items: center;
-}
-
-
-/* Nav items styling */
-.nav-links ul {
-  list-style: none;
-  display: flex;
-  text-align: center;
-}
-
-.nav-links ul li {
-  position: relative;
-  margin: 35px ;
-}
-
-.nav-links ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  
-  display: inline-block;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-/* Hover effect with overlapping background */
-.nav-links ul li a::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #000000;
-  border-radius: 8px;
   z-index: -1;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
+}
+.text-box1colour2{
+  width: 732px;
+  height: 250px;
+  background-color: #ff7c69 ;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(690px,-230px);
+  position: absolute;
+  z-index: -2;
 }
 
-.nav-links ul li a:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-
-
-.title-box{
-  font-size: 50px;
-  border-radius: 100px;
-  background: black;
-  color: white;
-  width: 480px;
-  min-height: 175px;
-  text-align: center;
-  line-height: 185px;
-  transform: translate(50%, -50%);
-  z-index: 2;
-}
-
-/* Logo Circle Container */
-.logo-circle {
-  width: 60px; /* Circle width */
-  height: 60px; /* Circle height, same as width for a perfect circle */
-  background-color: #0a0a08; /* Circle background color */
-  border-radius: 50%; /* Makes the div circular */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
-  border: 3px solid rgb(192, 168, 65);
-  z-index: 8;
-}
-
-/* Adjust the logo image size within the circle */
-.logo-circle img {
-  width: 600%; /* Slightly smaller than the circle */
-  height: auto; /* Maintain aspect ratio */
-  position: relative;
-  left: -2px;
-  top: 3px;
+  /* Logo Circle Container */
+  .logo-circle {
+    width: 60px; /* Circle width */
+    height: 60px; /* Circle height, same as width for a perfect circle */
+    background-color: #000000; /* Circle background color */
+    border-radius: 50%; /* Makes the div circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
+    border: 3px solid #68b893;
+    z-index: 8;
+  }
   
-}
-
-.deco-image {
-  width: 350px; /* Size for the yellow leaf */
-  position: absolute;
-  text-align: center;
-  margin: 20px 0;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-}
-
-.overlap-container {
-  position: relative;
-  width: 480px; 
-  height: 270px; 
-  left: -130px;
-  margin: 0 auto;
-  transform: translate(-300px, -850px);
-}
-
-.overlap-color, .overlap-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px; 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-  border: 3px solid black; /* Black outline */
-}
-
-/* Color Layers */
-.color1 {
-  background-color: #f5c24c; /* First layer color */
-  top: 20px;
-  left: 40px;
-  z-index: 1;
-}
-
-.color2 {
-  background-color: #ff7c69; /* Second layer color */
-  top: 10px;
-  left: 20px;
-  z-index: 2;
-}
-
-/* Image Layer */
-.overlap-image {
-  background-image: url('/images/skeleton_image.png'); /* Replace with your image path */
-  background-size: cover;
-  background-position: center;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-
-/* Common Wind Image Styling */
-.wind-image img {
-  position: absolute;
-  width: 120px; /* Adjust size as needed */
-}
-
-/* Position each wind image individually */
-.wind-image-left img {
-  transform: translate(1100px, -800px); /* Position the image */
-}
-
-.wind-image-right img {
-  transform: translate(80px, -1000px); /* Position the image */
-}
-
-nav {
-  position: fixed;
-  top: 5px;
-  left: 45%;
-  width: 50%; /* Full-width across the top */
-  border: 3px solid black;
-  padding: 10px;
-  z-index: 1000; /* Ensures it appears on top of other content */
-  justify-content: center;
-}
-div{
+  /* Adjust the logo image size within the circle */
+  .logo-circle img {
+    width: 600%; /* Slightly smaller than the circle */
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    left: -2px;
+    top: 3px;
+    
+  }
   
-}
-.logo-circle{
-  position: fixed;
-  top:15px;
-  margin-left: 2%;
-}
-
+  /* Color Layers */
+  .color1 {
+    background-color: #f5c24c; /* First layer color */
+    top: 20px;
+    left: 40px;
+    z-index: 1;
+  }
+  
+  nav {
+    position: fixed;
+    top: 5px;
+    left: 45%;
+    width: 50%; /* Full-width across the top */
+    border: 3px solid black;
+    padding: 10px;
+    z-index: 1000; /* Ensures it appears on top of other content */
+    justify-content: center;
+  }
+  
+  .logo-circle{
+    position: fixed;
+    top:15px;
+    margin-left: 2%;
+  }
+  
+  .manuel{
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    background-color: #017c74;
+  }
