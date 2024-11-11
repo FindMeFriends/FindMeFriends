@@ -35,7 +35,6 @@ nav {
     justify-content: center;
     display: flex;
     border-bottom: 3px solid black; /* Border only at the bottom */
-    font-family: "Fredoka", sans-serif;
 }
 
 .nav-links {
@@ -100,8 +99,8 @@ nav .scrolled {
     right: 0;
     display: flex;
     align-items: center;
-    font-family: 'Fredoka', 'Sans-Serif';
 }
+
 @media (min-width: 768px) {
     .menu-icon {
         display: none; /* Hide on larger screens */
@@ -147,7 +146,6 @@ nav {
     padding: 10px;
     z-index: 1000; /* Ensures it appears on top of other content */
     justify-content: center;
-    font-family: ;
 }
 
 .logo-circle{
@@ -155,7 +153,6 @@ nav {
     top:15px;
     margin-left: 2%;
 }
-
 
 .title-box{
     font-size: 50px;
@@ -169,10 +166,7 @@ nav {
     transform: translate(150%, -50%);
     z-index: 2;
     display: block;
-    font-family: "Coiny", system-ui;
-;
 }
-
 
 /* Brown Leaf Styling */
 .leaf-image-brown img {
@@ -207,18 +201,21 @@ nav {
     min-height: 40vh;
     margin: auto;
 }
+
 .about-section-div{
     display: flex;
     width: 90%;
     margin: auto;
     margin-bottom: 5%;
 }
+
 .about-section hr{
     border-top: 5px solid black;
     margin-bottom: 0;
     display: block;
     width: 100%;
 }
+
 .about-content {
     width: 50%;
     background: black;
@@ -253,9 +250,8 @@ nav {
 }
 
 .deco-image{
-    width: 500px;
-    border: 
-    z-index: 3;
+    z-index: -1;
+    transform: translate(50%, -275%);
 }
 
 /* Team Section */
