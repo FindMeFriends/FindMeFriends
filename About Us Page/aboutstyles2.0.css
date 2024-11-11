@@ -35,7 +35,6 @@ nav {
     justify-content: center;
     display: flex;
     border-bottom: 3px solid black; /* Border only at the bottom */
-    font-family: "Fredoka", sans-serif;
 }
 
 .nav-links {
