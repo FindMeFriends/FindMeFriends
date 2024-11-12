@@ -262,10 +262,21 @@ nav {
     background-color: #f5c24c;
 }
 
+#tree-img {
+    width: 75%; 
+    height: auto; 
+    margin: 0 auto; 
+}
+
+.team-section img{
+    width: 100%;
+    height: 100%;
+}
+
 .team-container {
     position: relative;
-    background-image: url('/images/Big Tree.png'); 
-    background-size: 75%; 
+    background-image: url('/images/About\ us\ tree.png'); 
+    background-size: 200%; 
     background-position: center top; 
     background-repeat: no-repeat; 
     padding-top: 2rem; 
