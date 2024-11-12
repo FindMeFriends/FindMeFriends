@@ -10,6 +10,128 @@
   position: relative;
 }
 
+/* Navigation container */
+nav {
+  background-color: #017c74;
+  display: flex;
+  align-items: stretch;
+  position: fixed;
+  height: 8%;
+  top: 5px;
+  left: 45%;
+  width: 50%; /* Full-width across the top */
+  border: 3px solid black;
+  z-index: 1000; /* Ensures it appears on top of other content */
+  justify-content: center;
+}
+
+
+/* Menu Icon for small screens */
+.menu-icon {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  display: none; /* Hide on larger screens */
+}
+
+
+nav .scrolled {
+  border: 3px solid black;
+}
+.nav-links {
+  position: static;
+  width: auto;
+  height: auto;
+  background: none;
+  box-shadow: none;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+
+/* Nav items styling */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+
+.nav-links ul li {
+  position: relative;
+  margin: 35px ;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  
+  display: inline-block;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect with overlapping background */
+.nav-links ul li a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 2px; /* Optional: to make the underline slightly rounded */
+  bottom: 0; /* Position the underline at the bottom of the link */
+  left: 0;
+  transform: scaleX(0); /* Initially scale the underline to 0 */
+  transform-origin: bottom right; /* Set the origin of the scaling */
+  transition: transform 0.3s ease;
+}
+
+.nav-links ul li a:hover::before {
+  transform: scaleX(1); /* Expand the underline to full width */
+  transform-origin: bottom left; /* Animate from left to right */
+}
+
+/* Logo Circle Container */
+.logo-circle {
+  width: 60px; /* Circle width */
+  height: 60px; /* Circle height, same as width for a perfect circle */
+  background-color: #000; /* Circle background color */
+  border-radius: 50%; /* Makes the div circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
+  border: 3px solid #017c74;
+  z-index: 8;
+}
+
+/* Adjust the logo image size within the circle */
+.logo-circle img {
+  width: 600%; /* Slightly smaller than the circle */
+  height: auto; /* Maintain aspect ratio */
+  position: relative;
+  left: -2px;
+  top: 3px;
+}
+
+nav {
+  position: fixed;
+  top: 5px;
+  left: 45%;
+  width: 50%; /* Full-width across the top */
+  border: 3px solid black;
+  padding: 10px;
+  z-index: 1000; /* Ensures it appears on top of other content */
+  justify-content: center;
+}
+
+.logo-circle{
+  position: fixed;
+  top:15px;
+  margin-left: 2%;
+}
+
 .content-box{
   height: 80vh;
   width: 100%;
@@ -51,132 +173,7 @@
 }
 
 
-/* Navigation container */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; /* Full width to avoid shifting */
-  height: 7%;
-  padding: 10px;
-  z-index: 1000; 
-  background-color: #017c74;
-  justify-content: center;
-  display: flex;
-  border-bottom: 3px solid black; /* Border only at the bottom */
-}
 
-.nav-links {
-  z-index: 10;
-}
-
-nav .scrolled {
-  border: 3px solid black;
-}
-
-
-/* Nav items styling */
-.nav-links ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-.nav-links ul li {
-  position: relative;
-  margin: 20px 0;
-}
-
-.nav-links ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 5px 20px;
-  display: inline-block;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-/* Logo Circle Container */
-.logo-circle {
-  width: 60px; /* Circle width */
-  height: 60px; /* Circle height, same as width for a perfect circle */
-  background-color: #017c74; /* Circle background color */
-  border-radius: 50%; /* Makes the div circular */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
-  border: 3px solid black;
-  z-index: 8;
-}
-
-/* Adjust the logo image size within the circle */
-.logo-circle img {
-  width: 600%; /* Slightly smaller than the circle */
-  height: auto; /* Maintain aspect ratio */
-  position: relative;
-  left: -2px;
-  top: 3px;
-}
-.nav-links {
-  position: static;
-  width: auto;
-  height: auto;
-  background: none;
-  box-shadow: none;
-  right: 0;
-  display: flex;
-  align-items: center;
-}
-
-@media (min-width: 768px) {
-  .menu-icon {
-      display: none; /* Hide on larger screens */
-  }
-
-  .nav-links {
-      position: static;
-      width: auto;
-      height: auto;
-      background: none;
-      box-shadow: none;
-      right: 0;
-      display: flex;
-      align-items: center;
-  }
-
-  .nav-links ul {
-      display: flex;
-      gap: 20px;
-  }
-
-  .nav-links ul li a {
-      font-size: 16px;
-      padding: 8px 12px;
-  }
-
-  .nav-links ul li a::before {
-      display: none; /* Disable the hover background on larger screens */
-  }
-}
-
-nav {
-  position: fixed;
-  top: 5px;
-  left: 45%;
-  width: 50%; /* Full-width across the top */
-  border: 3px solid black;
-  padding: 10px;
-  z-index: 1000; /* Ensures it appears on top of other content */
-  justify-content: center;
-}
-
-.logo-circle{
-  position: fixed;
-  top:15px;
-  margin-left: 2%;
-}
 
 .title-box{
   font-size: 50px;
@@ -192,7 +189,7 @@ nav {
   z-index: 2;
 }
 
-/* Logo Circle Container */
+
 
 
 .deco-image {
@@ -463,6 +460,37 @@ nav {
 .privacy-policy a {
   color: white;
   text-decoration: none;
+}
+
+.privacy-policy span {
+  cursor: pointer; /* Indicate it's clickable */
+  color: #fff; /* Default text color */
+  text-decoration: none; /* Remove default underline */
+  position: relative; /* For positioning the underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.privacy-policy span:hover {
+  color: #fff; /* Keep text color white on hover */
+}
+
+/* White underline effect only on text */
+.privacy-policy span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Position the underline just below the text */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Height of the underline */
+  background-color: #fff; /* White underline */
+  transform: scaleX(0); /* Initially scale the underline to 0 */
+  transform-origin: bottom right; /* Underline grows from right to left */
+  transition: transform 0.3s ease; /* Smooth transition for underline */
+}
+
+.privacy-policy span:hover::after {
+  transform: scaleX(1); /* Expand the underline on hover */
+  transform-origin: bottom left; /* Animate from left to right */
 }
 
 .icons {
