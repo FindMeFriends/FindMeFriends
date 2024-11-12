@@ -262,10 +262,21 @@ nav {
     background-color: #f5c24c;
 }
 
+#tree-img {
+    width: 75%; 
+    height: auto; 
+    margin: 0 auto; 
+}
+
+.team-section img{
+    width: 100%;
+    height: 100%;
+}
+
 .team-container {
     position: relative;
-    background-image: url('/images/Big Tree.png'); 
-    background-size: 75%; 
+    background-image: url('/images/About\ us\ tree.png'); 
+    background-size: 200%; 
     background-position: center top; 
     background-repeat: no-repeat; 
     padding-top: 2rem; 
@@ -407,3 +418,54 @@ nav {
 .operations { box-shadow: 6px 6px 0 #FA897B, 12px 12px 0 #FDDC67, 18px 18px 0 #D6A1E4; }
 .communications { box-shadow: 6px 6px 0 #FDDC67, 12px 12px 0 #FA897B, 18px 18px 0 #D6A1E4; }
 .subject-matter { box-shadow: 6px 6px 0 #FA897B, 12px 12px 0 #D6A1E4, 18px 18px 0 #FDDC67; }
+
+.footer {
+    height: 13vh;
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px; /* Padding for spacing from the edges */
+  }
+  
+  .footer-logo, .copyrights, .privacy-policy, .icons {
+    flex: 1; /* Equal space for each div */
+    text-align: center; /* Center content horizontally */
+  }
+  
+  .footer-logo img {
+    width: 150px;
+  }
+  
+  /* Copyright section adjustments */
+  .copyrights {
+    color: white;
+    display: flex; /* Keep icon and text in one row */
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  
+  .copyrights i {
+    margin-right: 6px;
+    color: white;
+  }
+  
+  .privacy-policy a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .icons {
+    color: white;
+  }
+  
+  .icons i {
+    margin-right: 10px;
+  }

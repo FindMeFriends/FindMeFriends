@@ -1,0 +1,654 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+  }
+  .content-box{
+    min-height: 80vh;
+    width: 100%;
+    background-color: #ff7c69;
+    position: relative;
+    
+  }
+  
+  hr{
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+  }
+  
+  .feature1{
+    height: 140vh;
+    width: 100%;
+    position: relative;
+  }
+  .feature2{
+    height: 140vh;
+    width: 100%;
+    position: relative;
+  }
+  .Cover{
+    transform: translate(-235px, -360px) scale(0.5);
+    z-index: 2;
+    position:relative;
+  }
+  .gif-box1{
+    color: #000000;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+    width: 315px;
+    height: 500px;
+    box-sizing: border-box;
+    transform: translate(190px,-1140px);
+    padding-top: 57px;
+    position: relative;
+    z-index: 3;
+  }
+  .Cover2{
+    transform: translate(1000px, -1150px) scale(0.65);
+    z-index: 2;
+    position:absolute;
+  }
+  .Cover3{
+    transform: translate(-412px, -2510px) scale(0.245);
+    z-index: 2;
+    position:relative;
+  }
+  .Cover4{
+    transform: translate(1013px, -4310px) scale(0.65);
+    z-index: 2;
+    position:absolute;
+  }
+  .Cover5{
+    transform: translate(1073px, -4150px) scale(1.5);
+    z-index: 2;
+    position:absolute;
+  }
+  .img-box2{
+    color: #000000;
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+    width: 350px;
+    height: 550px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 3;
+    border-radius: 50%;
+    transform: translate(990px,-1090px);
+  }
+  
+  /* Brown Leaf Styling */
+  .leaf-image-brown img {
+    width: 100px; /* Size for the brown leaf */
+    transform: translate(200px, -350px);
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Orange Leaf Styling */
+  .leaf-image-orange img {
+    width: 180px; /* Size for the orange leaf */
+    position: absolute;
+    transform: translate(1150px, -900px);
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Yellow Leaf Styling */
+  .leaf-image-yellow img {
+    width: 150px; /* Size for the yellow leaf */
+    position: absolute;
+    transform: translate(750px, -800px);
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  
+  /* Navigation container */
+  nav {
+    background-color: #ff7c69;
+    display: flex;
+    
+    align-items: stretch;
+    position: relative;
+    height: 5%;
+    
+    
+  }
+  
+  /* Menu Icon for small screens */
+  .menu-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none; /* Hide on larger screens */
+  }
+  
+  
+  nav.scrolled {
+    border: 3px solid black;
+  }
+  .nav-links {
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  /* Nav items styling */
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+  }
+  
+  .nav-links ul li {
+    position: relative;
+    margin: 35px ;
+  }
+  
+  .nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect with overlapping background */
+  .nav-links ul li a::before {
+    content: '';
+    position: absolute;
+    
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 8px;
+    z-index: 0; /* Keep it behind the text */
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-links ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  
+  
+  .title-box{
+    font-size: 50px;
+    border-radius: 100px;
+    background: #ff7c69;
+    color: white;
+    width: 480px;
+    font-family: "Coiny", system-ui;
+    min-height: 175px;
+    text-align: center;
+    line-height: 185px;
+    transform: translate(50%, -50%);
+    z-index: 2;
+  }
+
+  
+.text-box1{
+  font-size: 14px;
+  color: #000000;
+  border-radius: 30px;
+  border-style: solid;
+  background-color: white;
+  text-align: center;
+  width: 600px;
+  height: 200px;
+  box-sizing: border-box;
+  transform: translate(635px,-2030px);
+  padding: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.text-box1 h1{
+  font-size: 30;
+  font-family: "Ferdoka", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.text-box1colour1{
+  width: 600px;
+  height: 200px;
+  background-color: #f5c24c;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(660px,-2215px);
+  position: relative;
+  z-index: 2;
+}
+.text-box1colour2{
+  width: 600px;
+  height: 200px;
+  background-color: #68b893;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(685px,-2400px);
+  position: relative;
+  z-index: 1;
+}
+
+.text-box2{
+  font-size: 14px;
+  color: #000000;
+  border-radius: 30px;
+  border-style: solid;
+  background-color: white;
+  text-align: center;
+  width: 600px;
+  height: 200px;
+  box-sizing: border-box;
+  transform: translate(235px,-2080px);
+  padding: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.text-box2 h1{
+  font-size: 30;
+  font-family: "Ferdoka", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.text-box2colour1{
+  width: 600px;
+  height: 200px;
+  background-color:  #017c74;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(215px,-2265px);
+  position: relative;
+  z-index: 2;
+}
+.text-box2colour2{
+  width: 600px;
+  height: 200px;
+  background-color: #ff7c69;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(195px,-2450px);
+  position: relative;
+  z-index: 1;
+}
+.text-box3{
+  font-size: 14px;
+  color: #000000;
+  border-radius: 30px;
+  border-style: solid;
+  background-color: white;
+  text-align: center;
+  width: 600px;
+  height: 200px;
+  box-sizing: border-box;
+  transform: translate(235px,100px);
+  padding: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.text-box3 h1{
+  font-size: 30;
+  font-family: "Ferdoka", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.text-box3colour1{
+  width: 600px;
+  height: 200px;
+  background-color:  #ff7c69;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(215px,-85px);
+  position: relative;
+  z-index: 2;
+}
+.text-box3colour2{
+  width: 600px;
+  height: 200px;
+  background-color: #017c74;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(195px,-275px);
+  position: relative;
+  z-index: 1;
+}
+.text-box4{
+  font-size: 14px;
+  color: #000000;
+  border-radius: 30px;
+  border-style: solid;
+  background-color: white;
+  text-align: center;
+  width: 600px;
+  height: 200px;
+  box-sizing: border-box;
+  transform: translate(635px,-1000px);
+  padding: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.text-box4 h1{
+  font-size: 30;
+  font-family: "Ferdoka", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.text-box4colour1{
+  width: 600px;
+  height: 200px;
+  background-color: #68b893;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(660px,-1185px);
+  position: relative;
+  z-index: 2;
+}
+.text-box4colour2{
+  width: 600px;
+  height: 200px;
+  background-color: #f5c24c;
+  border-style: solid;
+  border-radius: 30px;
+  transform: translate(685px,-1370px);
+  position: relative;
+  z-index: 1;
+}
+
+.img-circle{
+  color: #000000;
+  border-style: solid;
+  border-width: 5px;
+  text-align: center;
+  width: 350px;
+  height: 550px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+  border-radius: 50%;
+  transform: translate(990px,-600px);
+}
+.img-box1-features2{
+  color: #000000;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 5px;
+  text-align: center;
+  width: 315px;
+  height: 500px;
+  box-sizing: border-box;
+  transform: translate(190px,-650px);
+  padding-top: 57px;
+  position: relative;
+  z-index: 3;
+}
+.security{
+  height: 60vh;
+  width: 100%;
+  background-color: #017c74;
+  position: relative;
+}
+
+.security img{
+  transform: scale(0.9);
+  left: 490px;
+  bottom: 40px;
+  position: relative;
+}
+.security-textbox{
+  height: 325px;
+  width: 300px;
+  background-color: #000000;
+  color: white;
+  border-radius: 30px;
+  transform: translate(100px,-455px);
+}
+
+.security-textbox h1{
+  font-size: 40px;
+  font-family: "Coiny", system-ui;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: 550;
+}
+.security-textbox h2{
+  font-size: 18px;
+  text-align: left;
+  padding: 18px;
+  padding-top: 40px;
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.security-listbox{
+  height: 325px;
+  width: 300px;
+  background-color: #000000;
+  color: white;
+  border-radius: 30px;
+  transform: translate(1110px,-778px);
+}
+
+.security-listbox h1{
+  font-size: 20px;
+  font-family: "Coiny", system-ui;
+  text-align: center;  
+  padding-top: 25px;
+  font-weight: 550;
+}
+.security-listbox ul{
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  padding-left: 50px;
+  padding-top: 20px;
+  text-align: left;
+  list-style-type: square;
+}
+
+  
+  /* Logo Circle Container */
+  .logo-circle {
+    width: 60px; /* Circle width */
+    height: 60px; /* Circle height, same as width for a perfect circle */
+    background-color: #000000; /* Circle background color */
+    border-radius: 50%; /* Makes the div circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
+    border: 3px solid #f5c24c;
+    z-index: 8;
+  }
+  
+  /* Adjust the logo image size within the circle */
+  .logo-circle img {
+    width: 600%; /* Slightly smaller than the circle */
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    left: -2px;
+    top: 3px;
+    
+  }
+  
+  .deco-image {
+    width: 350px; /* Size for the yellow leaf */
+    position: absolute;
+    text-align: center;
+    margin: 20px 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  
+  .overlap-container {
+    position: relative;
+    width: 480px; 
+    height: 270px; 
+    left: -130px;
+    margin: 0 auto;
+    transform: translate(-300px, -850px);
+  }
+  
+  .overlap-color, .overlap-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    border: 3px solid black; /* Black outline */
+  }
+  
+  /* Color Layers */
+  .color1 {
+    background-color: #f5c24c; /* First layer color */
+    top: 20px;
+    left: 40px;
+    z-index: 1;
+  }
+  
+  .color2 {
+    background-color: #017c74; /* Second layer color */
+    top: 10px;
+    left: 20px;
+    z-index: 2;
+  }
+  
+  /* Image Layer */
+  .overlap-image {
+    background-image: url('/images/Features-header.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  
+  /* Common Wind Image Styling */
+  .wind-image img {
+    position: absolute;
+    width: 120px; /* Adjust size as needed */
+  }
+  
+  /* Position each wind image individually */
+  .wind-image-left img {
+    transform: translate(1300px, -800px); /* Position the image */
+  }
+  
+  .wind-image-right img {
+    transform: translate(900px, -700px); /* Position the image */
+  }
+  
+  nav {
+    position: fixed;
+    top: 5px;
+    left: 45%;
+    width: 50%; /* Full-width across the top */
+    border: 3px solid black;
+    padding: 10px;
+    z-index: 1000; /* Ensures it appears on top of other content */
+    justify-content: center;
+  }
+  
+  .logo-circle{
+    position: fixed;
+    top:15px;
+    margin-left: 2%;
+  }
+  
+  .title-box{
+    font-size: 50px;
+    border-radius: 100px;
+    background: black;
+    color: white;
+    width: 480px;
+    min-height: 175px;
+    text-align: center;
+    line-height: 185px;
+    transform: translate(150%, -50%);
+    z-index: 2;
+    display: block;
+    font-family: "Coiny", system-ui;
+;
+  }
+
+
+  .footer {
+    height: 13vh;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px; /* Padding for spacing from the edges */
+  }
+  
+  .footer-logo, .copyrights, .privacy-policy, .icons {
+    flex: 1; /* Equal space for each div */
+    text-align: center; /* Center content horizontally */
+  }
+  
+  .footer-logo img {
+    width: 150px;
+  }
+  
+  /* Copyright section adjustments */
+  .copyrights {
+    color: white;
+    display: flex; /* Keep icon and text in one row */
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  
+  .copyrights i {
+    margin-right: 6px;
+    color: white;
+  }
+  
+  .privacy-policy a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .icons {
+    color: white;
+  }
+  
+  .icons i {
+    margin-right: 10px;
+  }
+
+
+
+
+  
