@@ -12,8 +12,10 @@
   .content-box{
     min-height: 80vh;
     width: 100%;
-    background-color:  #68b893;
-    position: relative;
+    background-image: url("/images/Backroung-Home.png");
+    background-size: cover;      /* Makes the image cover the whole element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
     
   }
 
