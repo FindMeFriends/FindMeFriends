@@ -1,0 +1,482 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    
+  }
+  .content-box{
+    min-height: 80vh;
+    width: 100%;
+    background-color: #ff7c69;
+    position: relative;
+    
+  }
+  
+  .header hr{
+    border-top: 7px solid #ff7c69;
+  }
+  
+  
+  /* Brown Leaf Styling */
+  .leaf-image-brown img {
+    width: 100px; /* Size for the brown leaf */
+    transform: translate(200px, -350px);
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Orange Leaf Styling */
+  .leaf-image-orange img {
+    width: 180px; /* Size for the orange leaf */
+    position: absolute;
+    transform: translate(1150px, -550px);
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Yellow Leaf Styling */
+  .leaf-image-yellow img {
+    width: 150px; /* Size for the yellow leaf */
+    position: absolute;
+    transform: translate(850px, -800px);
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  
+  /* Navigation container */
+  nav {
+    background-color: #ff7c69;
+    display: flex;
+    
+    align-items: stretch;
+    position: relative;
+    height: 5%;
+    
+    
+  }
+  
+  /* Menu Icon for small screens */
+  .menu-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none; /* Hide on larger screens */
+  }
+  
+  
+  nav.scrolled {
+    border: 3px solid black;
+  }
+  .nav-links {
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  /* Nav items styling */
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+  }
+  
+  .nav-links ul li {
+    position: relative;
+    margin: 35px ;
+  }
+  
+  .nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect with overlapping background */
+  .nav-links ul li a::before {
+    content: '';
+    position: absolute;
+    
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 8px;
+    z-index: 0; /* Keep it behind the text */
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-links ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  
+  
+  .title-box{
+    font-size: 50px;
+    border-radius: 100px;
+    background: #ff7c69;
+    color: white;
+    width: 480px;
+    font-family: "Coiny", system-ui;
+    min-height: 175px;
+    text-align: center;
+    line-height: 185px;
+    transform: translate(50%, -50%);
+    z-index: 2;
+  }
+  
+  /* Logo Circle Container */
+  .logo-circle {
+    width: 60px; /* Circle width */
+    height: 60px; /* Circle height, same as width for a perfect circle */
+    background-color: #000000; /* Circle background color */
+    border-radius: 50%; /* Makes the div circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
+    border: 3px solid #f5c24c;
+    z-index: 8;
+  }
+  
+  /* Adjust the logo image size within the circle */
+  .logo-circle img {
+    width: 600%; /* Slightly smaller than the circle */
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    left: -2px;
+    top: 3px;
+    
+  }
+  
+  .deco-image {
+    width: 350px; /* Size for the yellow leaf */
+    position: absolute;
+    text-align: center;
+    margin: 20px 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  
+  .overlap-container {
+    position: relative;
+    width: 480px; 
+    height: 270px; 
+    left: -130px;
+    margin: 0 auto;
+    transform: translate(-300px, -850px);
+  }
+  
+  .overlap-color, .overlap-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    border: 3px solid black; /* Black outline */
+  }
+  
+  /* Color Layers */
+  .color1 {
+    background-color: #f5c24c; /* First layer color */
+    top: 20px;
+    left: 40px;
+    z-index: 1;
+  }
+  
+  .color2 {
+    background-color: #ff7c69; /* Second layer color */
+    top: 10px;
+    left: 20px;
+    z-index: 2;
+  }
+  
+  /* Image Layer */
+  .overlap-image {
+    background-image: url('/images/skeleton_image.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  
+  /* Common Wind Image Styling */
+  .wind-image img {
+    position: absolute;
+    width: 120px; /* Adjust size as needed */
+  }
+  
+  /* Position each wind image individually */
+  .wind-image-left img {
+    transform: translate(1100px, -800px); /* Position the image */
+  }
+  
+  .wind-image-right img {
+    transform: translate(80px, -1000px); /* Position the image */
+  }
+  
+  nav {
+    position: fixed;
+    top: 5px;
+    left: 45%;
+    width: 50%; /* Full-width across the top */
+    border: 3px solid black;
+    padding: 10px;
+    z-index: 1000; /* Ensures it appears on top of other content */
+    justify-content: center;
+  }
+  
+  .logo-circle{
+    position: fixed;
+    top:15px;
+    margin-left: 2%;
+  }
+  
+  .title-box{
+    font-size: 50px;
+    border-radius: 100px;
+    background: black;
+    color: white;
+    width: 480px;
+    min-height: 175px;
+    text-align: center;
+    line-height: 185px;
+    transform: translate(150%, -50%);
+    z-index: 2;
+    display: block;
+    font-family: "Coiny", system-ui;
+;
+  }
+
+  .about-section{
+    width: 100%;
+    background: #fff;
+    min-height: 40vh;
+    margin: auto;
+}
+.about-section-div{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+.about-section hr{
+    border-top: 5px solid black;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+}
+.about-content {
+    width: 50%;
+    background: #ff7c69;
+    border-radius: 40px;
+    flex-basis: 40%;
+    margin-left: 5%;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #fff;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #fff;
+    font-family: "Fredoka", sans-serif;
+}
+
+.about-image img {
+    border-radius: 20px;
+    width: 600px;
+    margin-left: 10%;
+    flex-basis: 40%;
+}
+
+.deco-image{
+    width: 500px;
+    border: 
+    z-index: 3;
+}
+
+/* Team Section */
+.team-section {
+    padding: 4rem 2rem;
+    color: #333;
+    text-align: center;
+    background-color: #f5c24c;
+}
+
+.team-container {
+    position: relative;
+    background-image: url('/images/Big Tree.png'); 
+    background-size: 75%; 
+    background-position: center top; 
+    background-repeat: no-repeat; 
+    padding-top: 2rem; 
+}
+
+#member-eight {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 900px;
+    margin-right: 100px;
+}
+
+
+#member-nine {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 200px;
+    margin-right: 0px;
+}
+
+#member-ten {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 780px;
+    margin-right: 0px;
+}
+
+
+#member-six {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 1000px;
+    margin-right: 0px;
+}
+
+#member-seven {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+.team-section h1 {
+    font-size: 62px;
+    margin-bottom: 100px;
+    color: #333333;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.team-section img{
+    width: 800px;
+    height: 800px;
+    position: relative;
+}
+
+
+.team-member h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.team-member img {
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+    text-align: left;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #000000;
+}
+
+
+
+
+
+/* Hover Effects */
+.team-member:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+#member-one{
+    transform:translate(-45%, 0)
+}
+#member-two{
+    transform:translate(150%, 0)
+}
+#member-three{
+    transform:translate(-140%, 0)
+}
+#member-four{
+    transform:translate(120%, 0)
+}
+#member-five{
+    transform:translate(-75%, 0)
+}
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.team-member {
+    position: relative;
+    width: 250px;
+    background: #FFFFFF;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    box-shadow: 6px 6px 0 #ff7c69 , 12px 12px 0 #017c74, 18px 18px 0 #FFFFFF;
+}
+
+.team-member .role {
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+}
+
+.team-member .name {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+}
+
+.founder { box-shadow: 6px 6px 0 #FDDC67, 12px 12px 0 #FA897B, 18px 18px 0 #FFFFFF; }
+.volunteer { box-shadow: 6px 6px 0 #D6A1E4, 12px 12px 0 #FDDC67, 18px 18px 0 #FA897B; }
+.operations { box-shadow: 6px 6px 0 #FA897B, 12px 12px 0 #FDDC67, 18px 18px 0 #D6A1E4; }
+.communications { box-shadow: 6px 6px 0 #FDDC67, 12px 12px 0 #FA897B, 18px 18px 0 #D6A1E4; }
+.subject-matter { box-shadow: 6px 6px 0 #FA897B, 12px 12px 0 #D6A1E4, 18px 18px 0 #FDDC67; }
+
+  
