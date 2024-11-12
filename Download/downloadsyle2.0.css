@@ -8,7 +8,6 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  background: #efe2d3;
 }
 
 .content-box{
@@ -54,27 +53,72 @@
 
 /* Navigation container */
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width to avoid shifting */
+  height: 7%;
+  padding: 10px;
+  z-index: 1000; 
   background-color: #017c74;
+  justify-content: center;
   display: flex;
-  
-  align-items: stretch;
-  position: relative;
-  height: 5%;
+  border-bottom: 3px solid black; /* Border only at the bottom */
 }
 
-/* Menu Icon for small screens */
-.menu-icon {
-  font-size: 24px;
-  color: #fff;
-  cursor: pointer;
-  display: none; /* Hide on larger screens */
+.nav-links {
+  z-index: 10;
 }
 
-
-nav.scrolled {
+nav .scrolled {
   border: 3px solid black;
 }
 
+
+/* Nav items styling */
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-links ul li {
+  position: relative;
+  margin: 20px 0;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 20px;
+  display: inline-block;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Logo Circle Container */
+.logo-circle {
+  width: 60px; /* Circle width */
+  height: 60px; /* Circle height, same as width for a perfect circle */
+  background-color: #017c74; /* Circle background color */
+  border-radius: 50%; /* Makes the div circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
+  border: 3px solid black;
+  z-index: 8;
+}
+
+/* Adjust the logo image size within the circle */
+.logo-circle img {
+  width: 600%; /* Slightly smaller than the circle */
+  height: auto; /* Maintain aspect ratio */
+  position: relative;
+  left: -2px;
+  top: 3px;
+}
 .nav-links {
   position: static;
   width: auto;
@@ -86,47 +130,52 @@ nav.scrolled {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .menu-icon {
+      display: none; /* Hide on larger screens */
+  }
 
-/* Nav items styling */
-.nav-links ul {
-  list-style: none;
-  display: flex;
-  text-align: center;
+  .nav-links {
+      position: static;
+      width: auto;
+      height: auto;
+      background: none;
+      box-shadow: none;
+      right: 0;
+      display: flex;
+      align-items: center;
+  }
+
+  .nav-links ul {
+      display: flex;
+      gap: 20px;
+  }
+
+  .nav-links ul li a {
+      font-size: 16px;
+      padding: 8px 12px;
+  }
+
+  .nav-links ul li a::before {
+      display: none; /* Disable the hover background on larger screens */
+  }
 }
 
-.nav-links ul li {
-  position: relative;
-  margin: 35px ;
+nav {
+  position: fixed;
+  top: 5px;
+  left: 45%;
+  width: 50%; /* Full-width across the top */
+  border: 3px solid black;
+  padding: 10px;
+  z-index: 1000; /* Ensures it appears on top of other content */
+  justify-content: center;
 }
 
-.nav-links ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  
-  display: inline-block;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-/* Hover effect with overlapping background */
-.nav-links ul li a::before {
-  content: '';
-  position: absolute;
-  
-  width: 100%;
-  height: 2px;
-  background-color: #000000;
-  border-radius: 8px;
-  z-index: -1;
-  transform: scaleX(0);
-  transform-origin: bottom;
-  transition: transform 0.3s ease;
-}
-
-.nav-links ul li a:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
+.logo-circle{
+  position: fixed;
+  top:15px;
+  margin-left: 2%;
 }
 
 .title-box{
@@ -144,27 +193,7 @@ nav.scrolled {
 }
 
 /* Logo Circle Container */
-.logo-circle {
-  width: 60px; /* Circle width */
-  height: 60px; /* Circle height, same as width for a perfect circle */
-  background-color: #000000; /* Circle background color */
-  border-radius: 50%; /* Makes the div circular */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 4px 8px rgba(147, 227, 144, 0.1); /* Optional shadow */
-  border: 3px solid #f5c24c;
-  z-index: 8;
-}
 
-/* Adjust the logo image size within the circle */
-.logo-circle img {
-  width: 600%; /* Slightly smaller than the circle */
-  height: auto; /* Maintain aspect ratio */
-  position: relative;
-  left: -2px;
-  top: 3px;
-}
 
 .deco-image {
   width: 350px; /* Size for the yellow leaf */
@@ -240,26 +269,8 @@ nav.scrolled {
   display: inline-block;
 }
 
-nav {
-  position: fixed;
-  top: 5px;
-  left: 45%;
-  width: 50%; /* Full-width across the top */
-  border: 3px solid black;
-  padding: 10px;
-  z-index: 1000; /* Ensures it appears on top of other content */
-  justify-content: center;
-}
-
-.logo-circle{
-  position: fixed;
-  top:15px;
-  margin-left: 2%;
-}
-
 .download-section{
-  min-height: 120vh;
-  background: #efe2d3;
+  min-height: 105vh;
 }
 
 .download-section-div{
@@ -277,9 +288,9 @@ nav {
   flex-basis: 50%;
 }
 
-.demo-video video{
-  width: 50%;
-  margin-left: 35%;
+.demo-video img{
+  width: 70%;
+  margin-left: 25%;
 }
 
 .text-box{
@@ -287,7 +298,7 @@ nav {
   border-radius: 40px;
   position: absolute;
   width: 100%;
-  height: 95vh;
+  height: 85vh;
   border-radius: 15px; 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
   border: 3px solid black; /* Black outline */
@@ -315,7 +326,6 @@ nav {
   font-family: "Fredoka", sans-serif;
 }
 .text-box img{
-  width: 52%;
   margin-top: 8%;
   margin-left: 25%;
   margin-right: 25%;
@@ -328,7 +338,7 @@ nav {
 }
 
 .image-div img {
-  width: 60%; /* Adjust QR code size */
+  width: 45%; /* Adjust QR code size */
   margin: 0 auto;
   display: block;
 }
@@ -343,9 +353,9 @@ nav {
 .store-buttons a {
   display: inline-flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 8px 18px;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: 'Fredoka';
   color: white;
   text-decoration: none;
@@ -378,7 +388,7 @@ nav {
 
 .download-section-overlap-container {
   position: relative; 
-  min-height: 95vh;
+  min-height: 85vh;
   margin: 0 auto;
   display:block;
   flex-basis: 32%;
@@ -413,7 +423,7 @@ nav {
 }
 
 .footer {
-  height: 18vh;
+  height: 13vh;
   width: 100%;
   position: absolute;
   background-color: #000;
