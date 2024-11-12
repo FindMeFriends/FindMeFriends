@@ -263,9 +263,10 @@ nav {
 }
 
 #tree-img {
-    width: 75%; 
+    width: 80%; 
     height: auto; 
     margin: 0 auto; 
+    transform: translate(-1%, 14%);
 }
 
 .team-section img{
