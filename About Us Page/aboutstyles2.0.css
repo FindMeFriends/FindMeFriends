@@ -154,7 +154,8 @@ nav {
     margin-left: 2%;
 }
 
-.title-box{
+/* Title Box */
+.title-box {
     font-size: 50px;
     border-radius: 100px;
     background: black;
@@ -163,7 +164,8 @@ nav {
     min-height: 175px;
     text-align: center;
     line-height: 185px;
-    transform: translate(150%, -50%);
+    position: absolute; /* Added position */
+    transform: translate(150%, -73%);
     z-index: 2;
     display: block;
 }
@@ -177,13 +179,24 @@ nav {
     
 }
 
+/* Blob */
+.blob {
+    width: 100px;
+    transform: translate(717px, -440px);
+    text-align: center;
+    margin: 20px 0;
+    position: relative; /* Added position */
+    z-index: 1;
+}
+
 /* Orange Leaf Styling */
 .leaf-image-orange img {
     width: 180px; /* Size for the orange leaf */
     position: absolute;
-    transform: translate(1150px, -550px);
+    transform: translate(1150px, -871px);
     text-align: center;
     margin: 20px 0;
+    z-index: 2;
 }
 
 /* Yellow Leaf Styling */
@@ -251,7 +264,7 @@ nav {
 
 .deco-image{
     z-index: -1;
-    transform: translate(50%, -275%);
+    transform: translate(34%, -275%);
 }
 
 /* Team Section */
@@ -263,10 +276,10 @@ nav {
 }
 
 #tree-img {
-    width: 80%; 
+    width: 60%; 
     height: auto; 
     margin: 0 auto; 
-    transform: translate(-1%, 14%);
+    transform: translate(20%, 0%);
 }
 
 .team-section img{
@@ -323,7 +336,7 @@ nav {
 .team-section h1 {
     font-size: 62px;
     margin-bottom: 100px;
-    color: #333333;
+    color: #fefefe;
     text-align: left;
     margin-left: 10%;
 }
