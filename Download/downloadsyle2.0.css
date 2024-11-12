@@ -251,6 +251,16 @@ nav {
   display: inline-block;
 }
 
+.blob-background{
+  z-index: -1;
+  display:inline-block;
+}
+
+.blob-background img{
+  transform: translate(50%,-200%);
+  z-index: 1;
+}
+
 .download-section{
   min-height: 105vh;
 }
