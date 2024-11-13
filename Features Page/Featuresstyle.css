@@ -172,23 +172,8 @@
   }
   
   /* Hover effect with overlapping background */
-  .nav-links ul li a::before {
-    content: '';
-    position: absolute;
-    
-    width: 100%;
-    height: 2px;
-    background-color: #000000;
-    border-radius: 8px;
-    z-index: 0; /* Keep it behind the text */
-    transform: scaleX(0);
-    transform-origin: bottom;
-    transition: transform 0.3s ease;
-  }
-  
-  .nav-links ul li a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
+  .nav-links ul li a:hover{
+    transform: scale(1.05); /* Slight zoom on hover */
   }
   
   
