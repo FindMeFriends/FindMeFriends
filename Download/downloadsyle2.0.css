@@ -477,7 +477,7 @@ nav {
 }
 
 .icons i:hover {
-  transform: scale(1.4); /* Slight zoom on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
   opacity: 0.9; /* Slight opacity change */
   transition: 0.5s;
 }
