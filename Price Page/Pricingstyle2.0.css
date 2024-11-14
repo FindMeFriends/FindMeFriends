@@ -456,3 +456,90 @@ nav {
   margin-left: 2%;
 }
 
+/* Prevent horizontal overflow */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* General layout adjustments */
+  .header, .content-box, .offers, .content1, .nav-links ul, .footer-content {
+      width: 100%;
+      overflow-x: hidden;
+  }
+
+  .title-box {
+      font-size: 2rem;
+      width: 90%;
+      line-height: normal;
+      margin: 0 auto;
+  }
+
+  /* Adjust positioning and sizes for decorative images */
+  .leaf-image-brown img, .leaf-image-orange img, .leaf-image-yellow img, .wind-image img {
+      width: 60px;
+      position: relative;
+      transform: none;
+      margin: 10px auto;
+  }
+
+  /* Navigation adjustments for smaller screens */
+  nav {
+      width: 100%;
+      left: 0;
+      padding: 10px;
+  }
+
+  /* Offers section adjustments */
+  .offer1, .offer2, .offer3 {
+      width: 90%;
+      margin: 20px auto;
+      transform: none;
+  }
+
+  .offer1 h1, .offer2 h1, .offer3 h1 {
+      font-size: 1.8rem;
+  }
+
+  .offer1 h2, .offer2 h2, .offer3 h2, .offer1 h3, .offer2 h3, .offer3 h3 {
+      font-size: 1rem;
+      padding: 10px;
+  }
+
+  /* Content box adjustments */
+  .content1 .text-box1 {
+      width: 90%;
+      margin: 20px auto;
+      transform: none;
+  }
+
+  /* Footer adjustments */
+  .footer-content {
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+
+  .footer-logo img {
+      width: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Title box adjustments */
+  .title-box {
+      font-size: 1.5rem;
+      padding: 10px;
+  }
+
+  /* Content box adjustments */
+  .content-box, .content1 {
+      padding: 10px;
+  }
+
+  /* Footer adjustments for very small screens */
+  .footer-logo img {
+      width: 80px;
+  }
+}
+

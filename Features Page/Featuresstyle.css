@@ -40,20 +40,16 @@
   }
   .gif-box1{
     color: #000000;
-    border-radius: 30px;
-    border-style: solid;
-    border-width: 5px;
     text-align: center;
     width: 315px;
     height: 500px;
-    box-sizing: border-box;
     transform: translate(190px,-1140px);
     padding-top: 57px;
     position: relative;
     z-index: 3;
   }
   .Cover2{
-    transform: translate(1000px, -1150px) scale(0.65);
+    transform: translate(764px, -1407px) scale(0.5);
     z-index: 2;
     position:absolute;
   }
@@ -74,15 +70,11 @@
   }
   .img-box2{
     color: #000000;
-    border-style: solid;
-    border-width: 5px;
     text-align: center;
     width: 350px;
     height: 550px;
-    box-sizing: border-box;
     position: relative;
     z-index: 3;
-    border-radius: 50%;
     transform: translate(990px,-1090px);
   }
   
@@ -365,8 +357,6 @@
 
 .img-circle{
   color: #000000;
-  border-style: solid;
-  border-width: 5px;
   text-align: center;
   width: 350px;
   height: 550px;
@@ -378,9 +368,6 @@
 }
 .img-box1-features2{
   color: #000000;
-  border-radius: 30px;
-  border-style: solid;
-  border-width: 5px;
   text-align: center;
   width: 315px;
   height: 500px;
@@ -634,6 +621,70 @@
   .icons i {
     margin-right: 10px;
   }
+
+  /* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Leaf image positioning adjustments */
+  .leaf-image-brown img {
+      transform: translate(20vw, -50vh);
+  }
+  .leaf-image-orange img {
+      transform: translate(50vw, -70vh);
+  }
+  .leaf-image-yellow img {
+      transform: translate(30vw, -60vh);
+  }
+
+  /* Navigation adjustments for smaller screens */
+  nav {
+      width: 90%;
+      left: 5%;
+  }
+
+  /* Title box adjustments */
+  .title-box {
+      font-size: 1.5rem;
+      line-height: normal;
+  }
+
+  /* Text box adjustments */
+  .text-box1, .text-box2, .text-box3, .text-box4 {
+      font-size: 1rem;
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+  }
+
+  /* Security text and list box adjustments */
+  .security-textbox, .security-listbox {
+      width: 90%;
+      margin: 10px auto;
+      padding: 20px;
+  }
+
+  /* Footer adjustments */
+  .footer-content {
+      flex-wrap: wrap;
+  }
+
+  /* Logo in footer */
+  .footer-logo img {
+      width: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* General adjustments for very small screens */
+  .title-box {
+      font-size: 1.5rem;
+  }
+
+  /* Security section adjustments */
+  .security {
+      padding: 5%;
+  }
+}
+
 
 
 
