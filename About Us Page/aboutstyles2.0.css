@@ -182,7 +182,7 @@ nav {
 /* Blob */
 .blob {
     width: 100px;
-    transform: translate(717px, -440px);
+    transform: translate(717px, -420px);
     text-align: center;
     margin: 20px 0;
     position: relative; /* Added position */
