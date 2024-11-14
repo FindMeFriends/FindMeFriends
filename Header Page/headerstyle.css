@@ -337,6 +337,14 @@
   box-sizing: border-box;
 }
 
+.text-bubble {
+  transform: translate(33%, 80%) scale(0.5);
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  z-index: 10;
+}
+
 /* Responsive Navigation */
 @media (max-width: 768px) {
   .nav-links ul {
