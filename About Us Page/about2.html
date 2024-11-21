@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="aboutstyles2.0.css">
+    <script src="/Java Script/scripts.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
@@ -21,23 +22,24 @@
   <section class="header">
     <div class="content-box">
       <a href="/Header Page/Header.html">
-                <div class="logo-circle">
-                  <img src="/images/logofindme-removebg-preview (1).png" alt="Logo">
-                </div>
-              </a>
-        <nav>
-            
-              <div class="nav-links">
-                <ul>
+          <div class="logo-circle">
+              <img src="/images/logofindme-removebg-preview (1).png" alt="Logo">
+          </div>
+      </a>
+      <nav>
+          <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-x" id="bars" onclick="hideMenu()"></i>
+              <ul>
                   <li><a href="/Header Page/index.html">HOME</a></li>
                   <li><a href="/Features Page/Features.html">FEATURES</a></li>
                   <li><a href="/Download/download 2.0.html">DOWNLOAD</a></li>
                   <li><a href="/Price Page/Pricing2.0.html">PRICING</a></li>
                   <li><a href="/About Us Page/about2.html">ABOUT US</a></li>
-                </ul>
-              </div>
-        </nav>
-    </div>
+              </ul>
+          </div>
+          <i class="fa-solid fa-bars" id="bars2" onclick="showMenu()"></i>
+      </nav>
+  </div>
     <hr>
     <div class="title-box">
       <h1>About Us</h1>
@@ -98,7 +100,15 @@
     </div>
 </section>
 
-
+<script>
+  var navLinks = document.getElementById("navLinks")
+  function showMenu(){
+      navLinks.style.right = "0";
+  }
+  function hideMenu(){
+      navLinks.style.right = "-200px";
+  }
+</script>  
 
 
 

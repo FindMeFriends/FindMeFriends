@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Features</title>
     <link rel="stylesheet" href="/Features Page/Featuresstyle.css">
+    <script src="/Java Script/scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
@@ -27,7 +28,8 @@
                 </div>
             </a>
             <nav>
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                  <i class="fa-solid fa-x" id="bars" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="/Header Page/index.html">HOME</a></li>
                         <li><a href="/Features Page/Features.html">FEATURES</a></li>
@@ -36,7 +38,7 @@
                         <li><a href="/About Us Page/about2.html">ABOUT US</a></li>
                     </ul>
                 </div>
-                
+                <i class="fa-solid fa-bars" id="bars2" onclick="showMenu()"></i>
             </nav>
         </div>
         <hr>
@@ -138,7 +140,15 @@
             <i class="fa-brands fa-linkedin"></i>
         </div>
     </section>
-
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>  
   
 </body>
 </html>
