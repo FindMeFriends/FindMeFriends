@@ -67,7 +67,9 @@ nav {
   nav {
     justify-content: flex-end; /* Align toggle button to the right */
     border: none;
-    background: transparent
+    background: transparent;
+    top: 0;
+    right:0;
   }
 
   .nav-links ul li {
@@ -77,8 +79,8 @@ nav {
   .nav-links {
     position: absolute;
     background: #017c74;
-    height: 100vh;
-    width: 200px;
+    height: 100svh;
+    width: 100svw;
     top: 0;
     right: -200px;
     text-align: left;
