@@ -94,7 +94,15 @@ nav {
     color: #000;
     font-size: 22px;
     cursor: pointer;
-    margin: 10px;
+  }
+
+  #bars{
+    font-size: 20px;
+    margin: 10px
+  }
+  #bars2{
+    font-size: 30px;
+    margin: 26px 20px;
   }
 }
 
