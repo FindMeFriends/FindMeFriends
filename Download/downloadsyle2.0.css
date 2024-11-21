@@ -69,7 +69,7 @@ nav {
     border: none;
     background: transparent;
     top: 0;
-    right:0;
+    right: 0;
   }
 
   .nav-links ul li {
@@ -80,7 +80,7 @@ nav {
     position: absolute;
     background: #017c74;
     height: 100svh;
-    width: 100svw;
+    width: 200px;
     top: 0;
     right: -200px;
     text-align: left;
