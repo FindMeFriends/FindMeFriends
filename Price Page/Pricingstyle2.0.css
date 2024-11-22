@@ -138,111 +138,209 @@ nav {
 }
 
 .content1{
-  height: 60vh;
   width: 100%;
   position: relative;
 }
 .content-box{
-  min-height: 80vh;
+  height: 80vh;
   width: 100%;
   background-color: #f5c24c;
   position: relative;
-  
 }
 
 
 hr{
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
+  border-top: 7px solid black;
 }
 
 
 /* Brown Leaf Styling */
 .leaf-image-brown img {
   width: 100px; /* Size for the brown leaf */
-  transform: translate(1200px, -300px);
-  text-align: center;
+  right: 15%;
+  transform: translate(120px, -500px);
   margin: 20px 0;
+  position: absolute;
 }
 
 /* Orange Leaf Styling */
 .leaf-image-orange img {
-  width: 180px; /* Size for the orange leaf */
+  width: 150px; /* Size for the orange leaf */
   position: absolute;
-  transform: translate(200px, -1000px);
-  text-align: center;
   margin: 20px 0;
+  right: 30%;
+  transform: translate(-5px, -422px);
 }
 
 /* Yellow Leaf Styling */
-.leaf-image-yellow img {
-  width: 150px; /* Size for the yellow leaf */
+.leaf-image-green img {
+  width: 180px; /* Size for the yellow leaf */
   position: absolute;
-  transform: translate(850px, -800px);
-  text-align: center;
   margin: 20px 0;
+  right: 30%;
+  transform: translate(200px, -215px);
+  z-index: 2
 }
 
+/* Common Wind Image Styling */
+.wind-image img {
+  position: absolute;
+  width: 120px; /* Adjust size as needed */
+}
+
+/* Position each wind image individually */
+.wind-image-left img {
+  right: 5%;
+  bottom: 18%;
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+}
+
+.wind-image-right img {
+  right: 30%;
+  transform: translate(100px, -320px);
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  width: 100px;
+}
+
+.wind-image-top img{
+  right: 15%;
+  transform: translate(13px, -498px);
+  position: absolute;
+  width: 100px;
+}
 .title-box{
   font-size: 50px;
   border-radius: 100px;
   background: black;
   color: white;
-  width: 480px;
-  font-family: "Coiny", system-ui;
+  width: 500px;
+  font-family: "Coiny";
   min-height: 175px;
   text-align: center;
-  line-height: 185px;
-  transform: translate(50%, -50%);
+  line-height: 175px;
+  right: 30%;
+  transform: translate(0, -97px);
   z-index: 3;
+  position: absolute;
 }
 
+.image-overlap-container {
+  position: absolute;
+  width: 35%;
+  height: 43%; 
+  top: 15%;
+  left: -130px;
+  margin: 0 auto;
+  transform: translate(220px, 0);
+  display:inline-block
+}
+
+.image-overlap-color, .image-overlap-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  border: 3px solid black; /* Black outline */
+}
+
+/* Color Layers */
+.image-color1 {
+  background-color: #68b893; /* First layer color */
+  top: 20px;
+  left: 40px;
+  z-index: 1;
+  display: inline-block;
+}
+
+.image-color2 {
+  background-color: #ff7c69; /* Second layer color */
+  top: 10px;
+  left: 20px;
+  z-index: 2;
+  display: inline-block;
+}
+
+.image-overlap-image {
+  background-image: url('/images/price_image1.jpeg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: inline-block;
+}
+
+/*----------content div-------------*/
+.content1{
+  min-height: 90vh;
+  position: relative;
+}
+.content-div{
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 80vh;
+  position: relative;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  margin-bottom: 10%;
+  gap: 100px;
+}
+.content-overlap-container{
+  position: relative; 
+  display: block;
+  flex-basis: 45%;
+  min-height: 150px;
+  display: inline-block;
+  min-width: 360px;
+}
 .text-box1{
   font-size: 18px;
-  color: #000000;
+  width: 100%;
+  height: 100%;
+  color: #000;
   border-radius: 30px;
-  border-style: solid;
+  border: 3px solid black;
   background-color: white;
   text-align: center;
-  width: 800px;
-  height: 150px;
-  box-sizing: border-box;
-  transform: translate(700px,50px);
-  padding-top: 57px;
-  position: relative;
+  position: absolute;
+  align-content: center;
   z-index: 3;
 }
 
 .text-box1 h1{
-  font-size: 30;
-  font-family: "Ferdoka", serif;
-  font-weight: 600;
-  font-style: normal;
+  font-size: 28px;
+  margin:2% 5%
 }
 .text-box1colour1{
-  width: 800px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   background-color: #ff7c69;
-  border-style: solid;
+  border: 3px solid black;
   border-radius: 30px;
-  transform: translate(690px,-95px);
-  position: relative;
+  position: absolute;
   z-index: 2;
+  top: 10px;
+  right: 10px;
 }
 .text-box1colour2{
-  width: 800px;
-  height: 150px;
-  background-color: #017c74;
-  border-style: solid;
+  width: 100%;
+  height: 100%;
+  background-color: #68b893;
+  border: 3px solid black;
   border-radius: 30px;
-  transform: translate(680px,-240px);
-  position: relative;
+  position: absolute;
   z-index: 1;
+  top: 20px;
+  right: 20px;
 }
 
 
 .price-image{
-  width: 600px;
   height: 400px;
   background-image: url(/images/Price.png);
   background-size: cover;
@@ -251,7 +349,10 @@ hr{
   border-style: solid;
   border-radius: 50%;
   overflow: hidden;
-  transform: translate(30px,-475px)
+  flex-basis: 40%;
+  position: relative;
+  min-width: 360px;
+  display: inline-block;
 }
 
 
@@ -261,16 +362,18 @@ hr{
   min-height: 90vh;
   width: 100%;
   position: relative;
-  background-color: #017c74;
+  background-color: #68b893;
 }
 .offer-div{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: center;
   min-height: 90vh;
   margin: auto;
-  width: 80%;
+  width: 90%;
+  position: relative;
+  gap: -50px;
 }
 
 .offer{
@@ -280,12 +383,17 @@ hr{
   background-color: #000000;
   color: white;
   border-radius: 30px;
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: inline-block;
 }
 
 .offer h1{
   font-size: 40px;
   text-align: center;
-  margin-top: 10%;
+  width: 90%;
+  margin: 15% auto;
 }
 
 .offer h2{
@@ -294,7 +402,7 @@ hr{
   padding: 20px;
   font-family: "Fredoka", serif;
   font-weight: 300;
-  margin-top: 5%;
+  margin-top: -8%;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -308,7 +416,6 @@ hr{
   margin-left: 10%;
   margin-right: 10%;
 }
-
 
 
 /*--------
@@ -379,13 +486,14 @@ hr{
 .footer {
   height: 13vh;
   width: 100%;
-  position: absolute;
+  position: relative;
   background-color: #000;
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  position: relative;
+  justify-content: space-evenly;
   align-items: center;
   height: 100%;
   padding: 0 20px; /* Padding for spacing from the edges */
@@ -426,8 +534,6 @@ hr{
 .icons i {
   margin-right: 10px;
 }
-
-
 
 .deco-image {
   width: 350px; /* Size for the yellow leaf */
@@ -481,31 +587,18 @@ hr{
   z-index: 3;
 }
 
-/* Common Wind Image Styling */
-.wind-image img {
-  position: absolute;
-  width: 120px; /* Adjust size as needed */
-}
-
-/* Position each wind image individually */
-.wind-image-left img {
-  transform: translate(1000px, -750px); /* Position the image */
-}
-
-.wind-image-right img {
-  transform: translate(400px, -900px); /* Position the image */
-}
 
 
 
-/* Prevent horizontal overflow */
+/*
+/* Prevent horizontal overflow 
 body, html {
   overflow-x: hidden;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments 
 @media (max-width: 768px) {
-  /* General layout adjustments */
+  /* General layout adjustments 
   .header, .content-box, .offers, .content1, .nav-links ul, .footer-content {
       width: 100%;
       overflow-x: hidden;
@@ -518,7 +611,7 @@ body, html {
       margin: 0 auto;
   }
 
-  /* Adjust positioning and sizes for decorative images */
+  /* Adjust positioning and sizes for decorative images 
   .leaf-image-brown img, .leaf-image-orange img, .leaf-image-yellow img, .wind-image img {
       width: 60px;
       position: relative;
@@ -526,7 +619,7 @@ body, html {
       margin: 10px auto;
   }
 
-  /* Offers section adjustments */
+  /* Offers section adjustments 
   .offer1, .offer2, .offer3 {
       width: 90%;
       margin: 20px auto;
@@ -542,14 +635,14 @@ body, html {
       padding: 10px;
   }
 
-  /* Content box adjustments */
+  /* Content box adjustments *
   .content1 .text-box1 {
       width: 90%;
       margin: 20px auto;
       transform: none;
   }
 
-  /* Footer adjustments */
+  /* Footer adjustments 
   .footer-content {
       flex-wrap: wrap;
       gap: 20px;
@@ -561,20 +654,20 @@ body, html {
 }
 
 @media (max-width: 600px) {
-  /* Title box adjustments */
+  /* Title box adjustments 
   .title-box {
       font-size: 1.5rem;
       padding: 10px;
   }
 
-  /* Content box adjustments */
+  /* Content box adjustments 
   .content-box, .content1 {
       padding: 10px;
   }
 
-  /* Footer adjustments for very small screens */
+  /* Footer adjustments for very small screens 
   .footer-logo img {
       width: 80px;
   }
-}
+}*/
 

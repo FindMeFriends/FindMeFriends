@@ -151,9 +151,12 @@ nav {
 /* Brown Leaf Styling */
 .leaf-image-brown img {
   width: 100px; /* Size for the brown leaf */
-  transform: translate(200px, -350px);
+  transform: translateY(-700px);
   text-align: center;
   margin: 20px 0;
+  right: -88%;
+  position:relative;
+  z-index: 3;
 }
 
 /* Orange Leaf Styling */
@@ -165,14 +168,15 @@ nav {
   text-align: center;
   margin: 20px 0;
   display: inline-block;
-  z-index: 3
+  z-index: 1
 }
 
 /* Yellow Leaf Styling */
 .leaf-image-yellow img {
   width: 150px; /* Size for the yellow leaf */
   position: absolute;
-  transform: translate(850px, -800px);
+  right: 30%;
+  bottom: 45%;
   text-align: center;
   margin: 20px 0;
   display: inline-block;
@@ -191,9 +195,13 @@ nav {
   display: inline-block;
 }
 
-.wind-image-right img {
-  transform: translate(80px, -1000px); /* Position the image */
+.wind-image-right img {  /* Position the image */
   display: inline-block;
+  right: 30%;
+  bottom: 45%;
+  transform: translate(30px, -17px);
+  position: absolute;
+  width: 50px
 }
 
 
@@ -214,6 +222,7 @@ nav {
 }
 
 .title-box{
+  position: relative;
   font-size: 50px;
   border-radius: 100px;
   background: black;
@@ -223,7 +232,8 @@ nav {
   min-height: 175px;
   text-align: center;
   line-height: 185px;
-  transform: translate(50%, -50%);
+  right: -40%;
+  transform: translateY(-97px);
   z-index: 2;
 }
 
@@ -238,12 +248,12 @@ nav {
 
 .overlap-container {
   position: absolute;
-  width: 480px; 
-  height: 270px; 
-  left: -130px;
+  width: 507px;
+  height: 323px;
+  left: -144px;
   margin: 0 auto;
-  transform: translate(214px, -814px);
-  display:inline-block
+  transform: translate(220px, -843px);
+  display: inline-block;
 }
 
 .overlap-color, .overlap-image {
@@ -274,7 +284,7 @@ nav {
 
 /* Image Layer */
 .overlap-image {
-  background-image: url('/images/skeleton_image.png'); /* Replace with your image path */
+  background-image: url('/images/skeleton_image_copy.png'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   top: 0;
@@ -370,6 +380,7 @@ nav {
   display: block;
   flex-basis: 32%;
   min-width: 275px;
+  flex-flow: column;
 }
 
 .download-section-overlap-color-color1{
