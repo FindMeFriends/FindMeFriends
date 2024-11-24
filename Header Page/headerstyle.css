@@ -89,6 +89,33 @@ nav {
     transition: 0.5s ease; /* Smooth transition */
   }
 
+  img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-box1, .about-content {
+    padding: 10px;
+    margin: 10px auto;
+}
+
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -200px; /* Hide initially */
+    height: 100%;
+    width: 200px;
+    background-color: #68b893;
+    z-index: 10;
+    transition: 0.3s ease;
+}
+
+.show-menu {
+    right: 0; /* Slide in the menu */
+}
+
+
   #bars, #bars2 {
     display: block; /* Show toggle buttons on smaller screens */
     color: #000;
@@ -301,10 +328,10 @@ nav {
 }
 
 .about-image img {
-    border-radius: 20px;
-    width: 600px;
-    margin-left: 26%;
-    flex-basis: 40%;
+  border-radius: 20px;
+  width: 500px;
+  margin-left: 26%;
+  transform: translate(9px, 89px);
 }
 
 .deco-image{
