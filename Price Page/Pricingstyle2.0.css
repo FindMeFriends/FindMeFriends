@@ -408,9 +408,17 @@ hr{
   margin-top: 10%;
   margin-left: 15%;
   margin-right: 15%;
+  color: #68b893;
+  font-weight: 500;
+}
+.offer h3{
+  color: #68b893;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: "Fredoka", serif;
 }
 
-.offer h3{
+.offer p{
   font-size: 1.2rem;
   text-align: left;
   font-family: "Fredoka", serif;
@@ -421,6 +429,15 @@ hr{
   margin-top: 10%;
 }
 
+.offer-description{
+  position: relative;
+  margin-bottom: 5%;
+}
+.offer-price{
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
 .offer img{
   position: absolute;
 }
