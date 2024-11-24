@@ -112,6 +112,19 @@ nav {
   }
 }
 
+/* Logo Circle Container */
+
+.container1{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  min-height: 90vh;
+  margin: auto;
+  width: 90%;
+  position: relative;
+  gap: -50px;
+}
 
 /* Logo Circle Container */
 .logo-circle {
@@ -197,23 +210,6 @@ nav {
     z-index: 2;
     position:absolute;
   }
-  .img-box2{
-    color: #000000;
-    text-align: center;
-    width: 350px;
-    height: 550px;
-    position: relative;
-    z-index: 3;
-    transform: translate(990px,-1090px);
-  }
-  
-  /* Brown Leaf Styling */
-  .leaf-image-brown img {
-    width: 100px; /* Size for the brown leaf */
-    transform: translate(200px, -350px);
-    text-align: center;
-    margin: 20px 0;
-  }
   
   /* Orange Leaf Styling */
   .leaf-image-orange img {
@@ -255,7 +251,7 @@ nav {
   position: relative;
   width: 480px;
   height: 270px;
-  left: -455px;
+  left: -514px;
   top: -100px;
   margin: 0 auto;
 }
