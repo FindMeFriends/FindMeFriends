@@ -179,8 +179,11 @@ nav {
     border-top: 7px solid black;
   }
 
-  @media (max-width: 1277){
-    .Cover_one, .Cover_two_mini,  .Cover_three_mini img{
+  @media (max-width: 1277px){
+    .Cover_one, .Cover_two_mini,  .Cover_three_mini, .text-bubble{
+      display: none;
+    }
+    #second-header{
       display: none;
     }
   }
@@ -289,7 +292,7 @@ nav {
 @media (max-width: 1080px){
 
 .text-box-container {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 }
