@@ -281,7 +281,7 @@ hr{
     position: relative;
     display: inline-block;
     min-width: 150px;
-    flex-basis: 30%;
+    flex-basis: 35%;
   }
 
   .gif-box img {
@@ -467,9 +467,8 @@ hr{
 /*----Number2----*/
 
 .gif-box img {
-max-width: 100%; /* Ensures image scales down to fit its parent */
-height: auto;    /* Keeps the image's aspect ratio intact */
-width: 300px;    /* Example: set a specific size (adjust as needed) */
+width: 100%; /* Ensures image scales down to fit its parent */
+height: auto;    /* Keeps the image's aspect ratio intact */    /* Example: set a specific size (adjust as needed) */
 border-radius: 10px; /* Optional: adds rounded corners */
 }
 
@@ -596,8 +595,6 @@ right: 20px;
   font-style: normal;
 }
   
-<<<<<<< HEAD
-=======
   .deco-image {
     width: 350px; /* Size for the yellow leaf */
     position: absolute;
@@ -681,62 +678,76 @@ right: 20px;
     display: block;
     font-family: "Coiny", system-ui;
   }
->>>>>>> e52db551186cb2e1229fb10c2a752dd9b199b527
 
  /*-------FOOTER-------*/
 
-  .footer {
-    height: 13vh;
-    width: 100%;
-    position: relative;
-    background-color: #000;
-  }
-  
-  .footer-content {
-    display: flex;
-    position: absolute;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    padding: 0 20px; /* Padding for spacing from the edges */
-  }
-  
-  .footer-logo, .copyrights, .privacy-policy, .icons {
-    flex: 1; /* Equal space for each div */
-    text-align: center; /* Center content horizontally */
-  }
-  
-  .footer-logo img {
-    width: 150px;
-  }
-  
-  /* Copyright section adjustments */
-  .copyrights {
-    color: white;
-    display: flex; /* Keep icon and text in one row */
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap; /* Prevent line breaks */
-  }
-  
-  .copyrights i {
-    margin-right: 6px;
-    color: white;
-  }
-  
-  .privacy-policy a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .icons {
-    color: white;
-  }
-  
-  .icons i {
-    margin-right: 10px;
-  }
+ .footer {
+  height: 13vh;
+  width: 100%;
+  position: absolute;
+  background-color: #000;
+}
 
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 0px; /* Padding for spacing from the edges */
+}
+
+.footer-logo, .copyrights, .privacy-policy, .icons {
+  flex: 1; /* Equal space for each div */
+  text-align: center; /* Center content horizontally */
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+/* Copyright section adjustments */
+.copyrights {
+  color: white;
+  display: flex; /* Keep icon and text in one row */
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.copyrights i {
+  margin-right: 6px;
+  color: white;
+}
+
+.privacy-policy a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.privacy-policy a:hover{
+  width: 100%;
+  text-decoration: underline white;
+}
+
+.icons {
+  color: white;
+}
+
+.icons a{
+  text-decoration: none;
+  color: white
+}
+.icons i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.icons i:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  opacity: 0.9; /* Slight opacity change */
+  transition: 0.5s;
+}
 
 
   
