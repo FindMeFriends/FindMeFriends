@@ -279,8 +279,7 @@ hr{
     width: 100%; /* Make the image scale to the full width of its container */
     height: auto; /* Maintain the aspect ratio */
     max-width: 600px; /* Restrict the maximum size of the image */
-    border-radius: 10px; /* Optional: Add rounded corners */
-  }
+    border-radius: 10px; /* Optional: Add rounded corners */}
     
   .text-box-container1{
     position: relative; 
@@ -515,77 +514,59 @@ right: 20px;
 }
 
 
- /*----SECURITY----*/
-
-.security{
-  height: 60vh;
+/*----SECURITY----*/
+.security {
+  display: flex; /* Flexbox layout for alignment */
+  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center; /* Aligns items vertically */
+  height: auto; /* Allows content to adjust height dynamically */
   width: 100%;
   background-color: #a4d4a2;
-  position: relative;
+  padding: 40px 20px; /* Adds spacing around the content */
+  gap: 20px; /* Adds space between elements */
+  box-sizing: border-box;
 }
 
-.security img{
-  transform: scale(0.9);
-  left: 490px;
-  bottom: 40px;
-  position: relative;
+.security img {
+  flex: 1; /* Makes the image take up available space */
+  max-width: 400px; /* Restricts the maximum width of the image */
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  margin: 0 auto; /* Centers the image */
 }
-.security-textbox{
-  height: 325px;
-  width: 300px;
+
+.security-textbox,
+.security-listbox {
+  flex: 1; /* Makes textboxes flexible */
+  max-width: 400px; /* Restricts width for larger screens */
+  width: 100%; /* Makes boxes responsive */
+  padding: 20px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border-radius: 30px;
-  box-sizing: border-box;
   border: 3px solid rgb(9, 11, 9);
-  transform: translate(100px,-455px);
-}
-
-.security-textbox h1{
-  font-size: 42px;
-  text-align: center;
-  padding-top: 34px;
-  margin-bottom: -2%;
-}
-
-.security-textbox h2{
-  font-size: 19px;
-  text-align: center;
-  padding: 18px;
-  padding-top: 40px;
-  font-family: "Fredoka", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.security-listbox{
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  height: 325px;
-  width: 300px;
-  padding-top: 12px;
-  padding-left: 30px;
-  border-radius: 30px;
   box-sizing: border-box;
-  border: 3px solid rgb(9, 11, 9);
-  transform: translate(1110px,-778px);
+  text-align: center;
 }
 
-.security-listbox h1{
-  font-size: 32px;
-  text-align: center;
-  padding-top: 7%;
-  padding-right: 7%;
-  margin-bottom: 10%;
+.security-textbox h1,
+.security-listbox h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
-.security-listbox h2{
+
+.security-textbox h2,
+.security-listbox h2 {
+  font-size: 16px;
+  line-height: 1.6;
   font-family: "Fredoka", serif;
-  padding-right: 7%;
-  font-size: 18px;
   font-weight: 300;
   font-style: normal;
 }
   
+<<<<<<< HEAD
+=======
   .deco-image {
     width: 350px; /* Size for the yellow leaf */
     position: absolute;
@@ -669,6 +650,7 @@ right: 20px;
     display: block;
     font-family: "Coiny", system-ui;
   }
+>>>>>>> e52db551186cb2e1229fb10c2a752dd9b199b527
 
  /*-------FOOTER-------*/
 
