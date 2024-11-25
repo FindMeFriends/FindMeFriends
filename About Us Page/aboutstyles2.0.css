@@ -247,7 +247,7 @@ nav {
 
 /* Color Layers */
 .color1 {
-  background-color: #f5c24c; /* First layer color */
+  background-color: #017c74; /* First layer color */
   top: 20px;
   left: 40px;
   z-index: 1;
@@ -255,7 +255,7 @@ nav {
 }
 
 .color2 {
-  background-color: #ff7c69; /* Second layer color */
+  background-color: #f5c24c; /* Second layer color */
   top: 10px;
   left: 20px;
   z-index: 2;
@@ -264,7 +264,7 @@ nav {
 
 /* Image Layer */
 .overlap-image {
-  background-image: url('/images/skeleton_image_copy.png'); /* Replace with your image path */
+  background-image: url('/images/about_us_image_copy.jpeg'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   top: 0;
@@ -279,12 +279,12 @@ nav {
   border-radius: 100px;
   background: black;
   color: white;
-  width: 480px;
-  font-family: "Coiny", system-ui;
+  width: 450px;
+  font-family: "Coiny";
   min-height: 175px;
   text-align: center;
   line-height: 185px;
-  right: -40%;
+  right: -40%;;
   transform: translateY(-97px);
   z-index: 2;
 }
@@ -300,9 +300,9 @@ nav {
 
 .about-section-div{
     display: flex;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    justify-content: space-evenly;
 }
 
 .about-section hr{
@@ -317,7 +317,8 @@ nav {
     background: black;
     border-radius: 40px;
     flex-basis: 40%;
-    margin-left: 5%;
+    position: relative;
+    display: inline-block;
 }
 
 .about-content h1 {
@@ -340,8 +341,6 @@ nav {
 
 .about-image img {
     border-radius: 20px;
-    width: 600px;
-    margin-left: 10%;
     flex-basis: 40%;
 }
 
@@ -379,6 +378,7 @@ nav {
   margin-bottom: 30px;
   position: relative;
   margin: 5% 0;
+  min-width: 300px;
 }
 .team-member img{
   width: 100%;
@@ -389,19 +389,21 @@ nav {
   border: 3px solid black;
 }
 .member-description{
-  background: (0,0,0, 0.3);
+  background: (0,0,0, 0.1);
   height: 99%;
   width: 100%;
   position: absolute;
-  top: 3px;
-  left: 3px;
-  transition: 0.5s;
+  top: 0;
+  left: 0;
+  transition: 0.7s;
   z-index: 3;
   border-radius: 15px;
   text-align: center;
+  
 }
 .member-description:hover{
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 1);
+  border: 3px solid black;
 }
 .member-description h1{
   width: 100%;
@@ -464,6 +466,7 @@ nav {
   transition: 0.5s;
   opacity: 0;
   text-decoration: none;
+  font-family: "Fredoka" sans-serif;
 }
 .member-description:hover a{
   opacity: 1;
