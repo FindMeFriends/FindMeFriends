@@ -4,44 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Features</title>
-
-    <!-- External Stylesheets -->
     <link rel="stylesheet" href="/Features Page/Featuresstyle.css">
+    <script src="/Java Script/scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Cursor Style -->
     <style>
         body {
             cursor: url('https://commandaddgirls.com/app/themes/cognitif-starter/assets/dist/images/cursor-white.cur'), auto;
         }
     </style>
-
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 
-    <!-- JavaScript -->
-    <script src="/Java Script/scripts.js" defer></script>
 </head>
 <body>
-    <!-- Header Section -->
+
     <section class="header">
-        <!-- Logo and Navigation -->
         <div class="content-box">
-            <!-- Logo -->
             <a href="/Header Page/Header.html">
                 <div class="logo-circle">
-                    <img src="/images/logofindme-removebg-preview (1).png" alt="FindMeFriends Logo">
+                    <img src="/images/logofindme-removebg-preview (1).png" alt="Logo">
                 </div>
             </a>
-
-            <!-- Navigation -->
             <nav>
-                <!-- Close Icon -->
                 <div class="nav-links" id="navLinks">
-                    <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                  <i class="fa-solid fa-x" id="bars" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="/Header Page/index.html">HOME</a></li>
                         <li><a href="/Features Page/Features.html">FEATURES</a></li>
@@ -50,44 +38,37 @@
                         <li><a href="/About Us Page/about2.html">ABOUT US</a></li>
                     </ul>
                 </div>
-                <!-- Hamburger Menu Icon -->
-                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                <i class="fa-solid fa-bars" id="bars2" onclick="showMenu()"></i>
             </nav>
         </div>
-
-        <!-- Horizontal Line -->
-        <hr />
-
-        <!-- Page Title -->
+        <hr>
         <div class="title-box">
             <h1>Features</h1>
         </div>
-
-        <!-- Decorative Leaves -->
+        
+        <!-- Orange Leaf -->
         <div class="leaf-image leaf-image-orange">
-            <img src="/images/Light_green_leaf-removebg-preview.png" alt="Orange Decorative Leaf" />
+            <img src="/images/Light_green_leaf-removebg-preview.png" alt="Orange leaf" />
         </div>
+        
+        <!-- Yellow Leaf -->
         <div class="leaf-image leaf-image-yellow">
-            <img src="/images/yellow-leaf.PNG" alt="Yellow Decorative Leaf" />
+            <img src="/images/yellow-leaf.PNG" alt="Yellow leaf" />
         </div>
+        <!-- Wind Images -->
+    <div class="wind-image wind-image-left">
+        <img src="/images/Wind_option_2.png" alt="Wind image left">
+    </div>
 
-        <!-- Decorative Wind Images -->
-        <div class="wind-image wind-image-left">
-            <img src="/images/Wind_option_2.png" alt="Left Wind Decoration">
-        </div>
-        <div class="wind-image wind-image-right">
-            <img src="/images/Wind_option_3.png" alt="Right Wind Decoration">
-        </div>
-
-        <!-- Overlapping Container -->
-        <div class="overlap-container">
-            <div class="overlap-color color1"></div>
-            <div class="overlap-color color2"></div>
-            <div class="overlap-image"></div>
-        </div>
+    <div class="wind-image wind-image-right">
+        <img src="/images/Wind_option_3.png" alt="Wind image right">
+    </div>
+    <div class="overlap-container">
+        <div class="overlap-color color1"></div>
+        <div class="overlap-color color2"></div>
+        <div class="overlap-image"></div>
+    </div>
     </section>
-</body>
-</html>
 
 
     <!-- Features Section 1 -->
