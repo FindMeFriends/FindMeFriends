@@ -11,7 +11,7 @@
     
   }
 
-  /*-------nav bar-------*/
+  /*----NAVIGATION BAR----*/
 nav {
   display: flex;
   justify-content: space-evenly; /* Centers the nav content horizontally */
@@ -112,19 +112,7 @@ nav {
   }
 }
 
-/* Logo Circle Container */
-
-.container1{
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-content: center;
-  min-height: 90vh;
-  margin: auto;
-  width: 90%;
-  position: relative;
-  gap: -50px;
-}
+  /*-------LOGO-------*/
 
 /* Logo Circle Container */
 .logo-circle {
@@ -152,65 +140,8 @@ nav {
   top: 3px;
 }
 
-  .content-box{
-    min-height: 80vh;
-    width: 100%;
-    background-color: #ff7c69;
-    position: relative;
-    
-  }
-  
-  hr{
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-  }
-  
-  .feature1{
-    height: 140vh;
-    width: 100%;
-    position: relative;
-  }
-  .feature2{
-    height: 140vh;
-    width: 100%;
-    position: relative;
-  }
-  .Cover{
-    transform: translate(-235px, -360px) scale(0.5);
-    z-index: 2;
-    position:relative;
-  }
-  .gif-box1{
-    color: #000000;
-    text-align: center;
-    width: 315px;
-    height: 500px;
-    transform: translate(190px,-1140px);
-    padding-top: 57px;
-    position: relative;
-    z-index: 3;
-  }
-  .Cover2{
-    transform: translate(764px, -1407px) scale(0.5);
-    z-index: 2;
-    position:absolute;
-  }
-  .Cover3{
-    transform: translate(-412px, -1750px) scale(0.23);
-    z-index: 2;
-    position:relative;
-  }
-  .Cover4{
-    transform: translate(1013px, -4310px) scale(0.65);
-    z-index: 2;
-    position:absolute;
-  }
-  .Cover5{
-    transform: translate(1073px, -4150px) scale(1.5);
-    z-index: 2;
-    position:absolute;
-  }
-  
+ /*----THE LEAFS----*/
+
   /* Orange Leaf Styling */
   .leaf-image-orange img {
     width: 180px; /* Size for the orange leaf */
@@ -228,289 +159,378 @@ nav {
     text-align: center;
     margin: 20px 0;
   }
+
+
+ /*----THE WIND----*/
+
+    /* Common Wind Image Styling */
+    .wind-image img {
+      position: absolute;
+      width: 120px; /* Adjust size as needed */
+    }
+    
+    /* Position each wind image individually */
+    .wind-image-left img {
+      transform: translate(1300px, -800px); /* Position the image */
+    }
+    
+    .wind-image-right img {
+      transform: translate(900px, -700px); /* Position the image */
+    }
+    
+
+   /*----HEADER----*/
+
+.content-box{
+  min-height: 80vh;
+  width: 100%;
+  background-color: #ff7c69;
+  position: relative;
   
-
-  .title-box{
-    font-size: 50px;
-    border-radius: 100px;
-    background: #ff7c69;
-    color: white;
-    width: 480px;
-    font-family: "Coiny", system-ui;
-    min-height: 175px;
-    text-align: center;
-    line-height: 185px;
-    transform: translate(50%, -50%);
-    z-index: 2;
-  }
-
-/* The 1st text box */ 
-
-.text-box1-container {
-  align-items: center;
-  position: relative;
-  width: 480px;
-  height: 270px;
-  left: -514px;
-  top: -100px;
-  margin: 0 auto;
 }
 
-.text-box1 h1{
-  font-size: 30;
-  margin: 1% 3%;
-  font-family: 'fredoka', sans-serif;
-  font-weight: 400;
-  font-style: normal;
+hr{
+  border-top: 5px solid black;
+}
+
+.deco-image {
+  width: 350px; /* Size for the yellow leaf */
+  position: absolute;
   text-align: center;
-
+  margin: 20px 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 
-.text-box1{
-  font-size: 16px;
-  color: #000000;
-  border-radius: 30px;
-  border-style: solid;
-  background-color: white;
-  text-align: Left;
-  width: 600px;
-  height: 200px;
-  box-sizing: border-box;
-  border: 3px solid black;
-  transform: translate(635px,-2030px);
-  padding: 50px;
+.overlap-container {
   position: relative;
-  z-index: 3;
+  width: 480px; 
+  height: 270px; 
+  left: -130px;
+  margin: 0 auto;
+  transform: translate(-300px, -850px);
 }
 
-.text-box1colour1{
-  width: 600px;
-  height: 200px;
-  background-color: #f5c24c;
-  border-style: solid;
-  border-radius: 30px;
-  border: 3px solid black;
-  transform: translate(649px, -2219px);
-  position: relative;
-  z-index: 2;
+.overlap-color, .overlap-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  border: 3px solid black; /* Black outline */
 }
 
-.text-box1colour2{
-  width: 600px;
-  height: 200px;
-  background-color: #68b893;
-  border-style: solid;
-  border-radius: 30px;
-  border: 3px solid black;
-  transform: translate(664px, -2406px);
-  position: relative;
+/* Color Layers */
+.color1 {
+  background-color: #f5c24c; /* First layer color */
+  top: 20px;
+  left: 40px;
   z-index: 1;
 }
 
-/* The 2nd text box */ 
+.color2 {
+  background-color: #017c74; /* Second layer color */
+  top: 10px;
+  left: 20px;
+  z-index: 2;
+}
 
-.text-box2-container {
-  position: relative;
+/* Image Layer */
+.overlap-image {
+  background-image: url('/images/Features-header.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.title-box{
+  font-size: 50px;
+  border-radius: 100px;
+  background: black;
+  color: white;
   width: 480px;
-  height: 270px;
-  left: -455px;
-  top: 806px;
-  margin: 0 auto;
+  min-height: 175px;
+  text-align: center;
+  line-height: 185px;
+  transform: translate(150%, -50%);
+  z-index: 2;
+  display: block;
+  font-family: "Coiny", system-ui;
+;
+}
+
+
+ /*----FEATURE 1----*/
+
+  /*----Number1----*/
+
+  .container{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 80vh;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10%;
+    gap: 100px;
+  }
+
+  .gif-box{
+    position: relative;
+    display: inline-block;
+    min-width: 150px;
+    flex-basis: 30%;
+  }
+
+  .gif-box img {
+    width: 100%; /* Make the image scale to the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 600px; /* Restrict the maximum size of the image */
+    border-radius: 10px; /* Optional: Add rounded corners */
+  }
+    
+  .text-box-container1{
+    position: relative; 
+    display: block;
+    flex-basis: 45%;
+    min-height: 150px;
+    display: inline-block;
+    min-width: 360px;
+  }
+  .text-box1{
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    border-radius: 30px;
+    border: 3px solid black;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    align-content: center;
+    z-index: 3;
+  }
+
+  .text-box1 h1{
+    font-size: 28px;
+    margin:2% 5%;
+    font-family: 'fredoka', sans-serif;
+    font-weight: 400;
+  }
+  .text-box1colour1{
+    width: 100%;
+    height: 100%;
+    background-color: #ff7c69;
+    border: 3px solid #000;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+  }
+  .text-box1colour2{
+    width: 100%;
+    height: 100%;
+    background-color: #68b893;
+    border: 3px solid black;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 20px;
+  }
+
+ /*----Number2----*/
+
+ .gif-box img {
+  max-width: 100%; /* Ensures image scales down to fit its parent */
+  height: auto;    /* Keeps the image's aspect ratio intact */
+  width: 300px;    /* Example: set a specific size (adjust as needed) */
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+  
+.text-box-container2{
+  position: relative; 
+  display: block;
+  flex-basis: 45%;
+  min-height: 150px;
+  display: inline-block;
+  min-width: 360px;
+}
+.text-box2{
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  border-radius: 30px;
+  border: 3px solid black;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  align-content: center;
+  z-index: 3;
 }
 
 .text-box2 h1{
-  font-size: 30;
-  margin: 1% 3%;
+  font-size: 28px;
+  margin:2% 5%;
   font-family: 'fredoka', sans-serif;
   font-weight: 400;
-  font-style: normal;
-  text-align: center;
-}
-
-.text-box2{
-  font-size: 16px;
-  color: #000000;
-  border-radius: 30px;
-  border-style: solid;
-  border: 3px solid black;
-  background-color: white;
-  text-align: left;
-  width: 600px;
-  height: 200px;
-  box-sizing: border-box;
-  transform: translate(235px,-2080px);
-  padding: 50px;
-  position: relative;
-  z-index: 3;
 }
 
 .text-box2colour1{
-  width: 600px;
-  height: 200px;
-  background-color:  #017c74;
-  border-style: solid;
+  width: 100%;
+  height: 100%;
+  background-color: #ff7c69;
+  border: 3px solid #000;
   border-radius: 30px;
-  border: 3px solid black;
-  transform: translate(215px,-2265px);
-  position: relative;
+  position: absolute;
   z-index: 2;
+  top: 10px;
+  right: 10px;
 }
 .text-box2colour2{
-  width: 600px;
-  height: 200px;
-  background-color: #ff7c69;
-  border-style: solid;
-  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #68b893;
   border: 3px solid black;
-  transform: translate(195px,-2450px);
-  position: relative;
+  border-radius: 30px;
+  position: absolute;
   z-index: 1;
+  top: 20px;
+  right: 20px;
 }
 
-/* The 3rd text box */ 
+ /*----FEATURE 2----*/
 
-.text-box3-container {
-  position: relative;
-  width: 480px;
-  height: 270px;
-  left: -580px;
-  top: 40px;
-  margin: 0 auto;
+ /*----Number1----*/
+ .gif-box img {
+  max-width: 100%; /* Ensures image scales down to fit its parent */
+  height: auto;    /* Keeps the image's aspect ratio intact */
+  width: 300px;    /* Example: set a specific size (adjust as needed) */
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+  
+.text-box-container3{
+  position: relative; 
+  display: block;
+  flex-basis: 45%;
+  min-height: 150px;
+  display: inline-block;
+  min-width: 360px;
+}
+.text-box3{
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  border-radius: 30px;
+  border: 3px solid black;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  align-content: center;
+  z-index: 3;
 }
 
 .text-box3 h1{
-  font-size: 30;
-  margin: -3% -3%;
+  font-size: 28px;
+  margin:2% 5%;
   font-family: 'fredoka', sans-serif;
   font-weight: 400;
-  font-style: normal;
-  text-align: center;
 }
-
-.text-box3{
-  font-size: 16px;
-  color: #000000;
-  border-radius: 30px;
-  border-style: solid;
-  background-color: white;
-  text-align: left;
-  width: 600px;
-  height: 200px;
-  box-sizing: border-box;
-  border: 3px solid black;
-  transform: translate(235px,100px);
-  padding: 50px;
-  position: relative;
-  z-index: 3;
-}
-
 .text-box3colour1{
-  width: 600px;
-  height: 200px;
-  background-color:  #ff7c69;
-  border-style: solid;
+  width: 100%;
+  height: 100%;
+  background-color: #ff7c69;
+  border: 3px solid #000;
   border-radius: 30px;
-  border: 3px solid black;
-  transform: translate(215px,-85px);
-  position: relative;
+  position: absolute;
   z-index: 2;
+  top: 10px;
+  right: 10px;
 }
 .text-box3colour2{
-  width: 600px;
-  height: 200px;
-  background-color: #017c74;
-  border-style: solid;
-  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #68b893;
   border: 3px solid black;
-  transform: translate(195px,-275px);
-  position: relative;
+  border-radius: 30px;
+  position: absolute;
   z-index: 1;
+  top: 20px;
+  right: 20px;
 }
 
-.phone3-container{
-  position: relative;
-  width: 480px;
-  height: 270px;
-  left: -580px;
-  top: 1680px;
-  margin: 0 auto;
+/*----Number2----*/
+
+.gif-box img {
+max-width: 100%; /* Ensures image scales down to fit its parent */
+height: auto;    /* Keeps the image's aspect ratio intact */
+width: 300px;    /* Example: set a specific size (adjust as needed) */
+border-radius: 10px; /* Optional: adds rounded corners */
 }
 
-/* The 4th text box */ 
-
-.text-box4-container {
-  position: relative;
-  width: 480px;
-  height: 270px;
-  left: -370px;
-  top: 350px;
-  margin: 0 auto;
+.text-box-container4{
+position: relative; 
+display: block;
+flex-basis: 45%;
+min-height: 150px;
+display: inline-block;
+min-width: 360px;
+}
+.text-box4{
+font-size: 18px;
+width: 100%;
+height: 100%;
+color: #000;
+border-radius: 30px;
+border: 3px solid black;
+background-color: white;
+text-align: center;
+position: absolute;
+align-content: center;
+z-index: 3;
 }
 
 .text-box4 h1{
-  font-size: 30;
-  margin: 0% -3%;
-  font-family: 'fredoka', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
+font-size: 28px;
+margin:2% 5%;
+font-family: 'fredoka', sans-serif;
+font-weight: 400;
 }
-
-.text-box4{
-  font-size: 16px;
-  color: #000000;
-  border-radius: 30px;
-  border-style: solid;
-  background-color: white;
-  text-align: left;
-  width: 600px;
-  height: 200px;
-  box-sizing: border-box;
-  border: 3px solid black;
-  transform: translate(635px,-1000px);
-  padding: 50px;
-  position: relative;
-  z-index: 3;
-}
-
 .text-box4colour1{
-  width: 600px;
-  height: 200px;
-  background-color: #68b893;
-  border-style: solid;
-  border-radius: 30px;
-  border: 3px solid black;
-  transform: translate(660px,-1185px);
-  position: relative;
-  z-index: 2;
+width: 100%;
+height: 100%;
+background-color: #ff7c69;
+border: 3px solid #000;
+border-radius: 30px;
+position: absolute;
+z-index: 2;
+top: 10px;
+right: 10px;
 }
 .text-box4colour2{
-  width: 600px;
-  height: 200px;
-  background-color: #f5c24c;
-  border-style: solid;
-  border-radius: 30px;
-  border: 3px solid black;
-  transform: translate(685px,-1370px);
-  position: relative;
-  z-index: 1;
+width: 100%;
+height: 100%;
+background-color: #68b893;
+border: 3px solid black;
+border-radius: 30px;
+position: absolute;
+z-index: 1;
+top: 20px;
+right: 20px;
 }
 
-.img-box1-features2{
-  color: #000000;
-  text-align: center;
-  width: 315px;
-  height: 500px;
-  box-sizing: border-box;
-  transform: translate(190px,-650px);
-  padding-top: 57px;
-  position: relative;
-  z-index: 3;
-}
+
+ /*----SECURITY----*/
+
 .security{
   height: 60vh;
   width: 100%;
-  background-color: #017c74;
+  background-color: #a4d4a2;
   position: relative;
 }
 
@@ -523,9 +543,11 @@ nav {
 .security-textbox{
   height: 325px;
   width: 300px;
-  background-color: #080808;
-  color: rgb(255, 253, 253);
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   border-radius: 30px;
+  box-sizing: border-box;
+  border: 3px solid rgb(9, 11, 9);
   transform: translate(100px,-455px);
 }
 
@@ -547,8 +569,8 @@ nav {
 }
 
 .security-listbox{
-  background-color: #080808;
-  color: rgb(252, 248, 248);
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   height: 325px;
   width: 300px;
   padding-top: 12px;
@@ -574,91 +596,8 @@ nav {
   font-style: normal;
 }
   
-  .deco-image {
-    width: 350px; /* Size for the yellow leaf */
-    position: absolute;
-    text-align: center;
-    margin: 20px 0;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-  }
-  
-  .overlap-container {
-    position: relative;
-    width: 480px; 
-    height: 270px; 
-    left: -130px;
-    margin: 0 auto;
-    transform: translate(-300px, -850px);
-  }
-  
-  .overlap-color, .overlap-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    border: 3px solid black; /* Black outline */
-  }
-  
-  /* Color Layers */
-  .color1 {
-    background-color: #f5c24c; /* First layer color */
-    top: 20px;
-    left: 40px;
-    z-index: 1;
-  }
-  
-  .color2 {
-    background-color: #017c74; /* Second layer color */
-    top: 10px;
-    left: 20px;
-    z-index: 2;
-  }
-  
-  /* Image Layer */
-  .overlap-image {
-    background-image: url('/images/Features-header.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    left: 0;
-    z-index: 3;
-  }
-  
-  /* Common Wind Image Styling */
-  .wind-image img {
-    position: absolute;
-    width: 120px; /* Adjust size as needed */
-  }
-  
-  /* Position each wind image individually */
-  .wind-image-left img {
-    transform: translate(1300px, -800px); /* Position the image */
-  }
-  
-  .wind-image-right img {
-    transform: translate(900px, -700px); /* Position the image */
-  }
-  
- 
-  
-  .title-box{
-    font-size: 50px;
-    border-radius: 100px;
-    background: black;
-    color: white;
-    width: 480px;
-    min-height: 175px;
-    text-align: center;
-    line-height: 185px;
-    transform: translate(150%, -50%);
-    z-index: 2;
-    display: block;
-    font-family: "Coiny", system-ui;
-;
-  }
 
+ /*-------FOOTER-------*/
 
   .footer {
     height: 13vh;
@@ -669,7 +608,7 @@ nav {
   
   .footer-content {
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
