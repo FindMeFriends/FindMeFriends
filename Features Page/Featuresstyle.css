@@ -281,7 +281,7 @@ hr{
     position: relative;
     display: inline-block;
     min-width: 150px;
-    flex-basis: 30%;
+    flex-basis: 35%;
   }
 
   .gif-box img {
@@ -466,9 +466,8 @@ hr{
 /*----Number2----*/
 
 .gif-box img {
-max-width: 100%; /* Ensures image scales down to fit its parent */
-height: auto;    /* Keeps the image's aspect ratio intact */
-width: 300px;    /* Example: set a specific size (adjust as needed) */
+width: 100%; /* Ensures image scales down to fit its parent */
+height: auto;    /* Keeps the image's aspect ratio intact */    /* Example: set a specific size (adjust as needed) */
 border-radius: 10px; /* Optional: adds rounded corners */
 }
 
@@ -572,69 +571,165 @@ right: 20px;
   line-height: 1.6;
   font-family: "Fredoka", serif;
   font-weight: 300;
+  font-style: normal;
 }
-
-.security-listbox h2 li {
-  list-style: none; /* Removes default bullet points */
-  text-align: left;
-  margin-left: 10px;
-}
-
+  
+<<<<<<< HEAD
+=======
+  .deco-image {
+    width: 350px; /* Size for the yellow leaf */
+    position: absolute;
+    text-align: center;
+    margin: 20px 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  
+  .overlap-container {
+    position: relative;
+    width: 480px; 
+    height: 270px; 
+    left: -130px;
+    margin: 0 auto;
+    transform: translate(-300px, -850px);
+  }
+  
+  .overlap-color, .overlap-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    border: 3px solid black; /* Black outline */
+  }
+  
+  /* Color Layers */
+  .color1 {
+    background-color: #f5c24c; /* First layer color */
+    top: 20px;
+    left: 40px;
+    z-index: 1;
+  }
+  
+  .color2 {
+    background-color: #017c74; /* Second layer color */
+    top: 10px;
+    left: 20px;
+    z-index: 2;
+  }
+  
+  /* Image Layer */
+  .overlap-image {
+    background-image: url('/images/Features-header.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  
+  /* Common Wind Image Styling */
+  .wind-image img {
+    position: absolute;
+    width: 120px; /* Adjust size as needed */
+  }
+  
+  /* Position each wind image individually */
+  .wind-image-left img {
+    transform: translate(1300px, -800px); /* Position the image */
+  }
+  
+  .wind-image-right img {
+    transform: translate(900px, -700px); /* Position the image */
+  }
+  
+ 
+  
+  .title-box{
+    font-size: 50px;
+    border-radius: 100px;
+    background: black;
+    color: white;
+    width: 480px;
+    min-height: 175px;
+    text-align: center;
+    line-height: 185px;
+    transform: translate(150%, -50%);
+    z-index: 2;
+    display: block;
+    font-family: "Coiny", system-ui;
+  }
+>>>>>>> e52db551186cb2e1229fb10c2a752dd9b199b527
 
  /*-------FOOTER-------*/
 
-  .footer {
-    height: 13vh;
-    width: 100%;
-    position: relative;
-    background-color: #000;
-  }
-  
-  .footer-content {
-    display: flex;
-    position: absolute;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    padding: 0 20px; /* Padding for spacing from the edges */
-  }
-  
-  .footer-logo, .copyrights, .privacy-policy, .icons {
-    flex: 1; /* Equal space for each div */
-    text-align: center; /* Center content horizontally */
-  }
-  
-  .footer-logo img {
-    width: 150px;
-  }
-  
-  /* Copyright section adjustments */
-  .copyrights {
-    color: white;
-    display: flex; /* Keep icon and text in one row */
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap; /* Prevent line breaks */
-  }
-  
-  .copyrights i {
-    margin-right: 6px;
-    color: white;
-  }
-  
-  .privacy-policy a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .icons {
-    color: white;
-  }
-  
-  .icons i {
-    margin-right: 10px;
-  }
+ .footer {
+  height: 13vh;
+  width: 100%;
+  position: absolute;
+  background-color: #000;
+}
 
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 0px; /* Padding for spacing from the edges */
+}
+
+.footer-logo, .copyrights, .privacy-policy, .icons {
+  flex: 1; /* Equal space for each div */
+  text-align: center; /* Center content horizontally */
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+/* Copyright section adjustments */
+.copyrights {
+  color: white;
+  display: flex; /* Keep icon and text in one row */
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.copyrights i {
+  margin-right: 6px;
+  color: white;
+}
+
+.privacy-policy a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.privacy-policy a:hover{
+  width: 100%;
+  text-decoration: underline white;
+}
+
+.icons {
+  color: white;
+}
+
+.icons a{
+  text-decoration: none;
+  color: white
+}
+.icons i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.icons i:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  opacity: 0.9; /* Slight opacity change */
+  transition: 0.5s;
+}
 
 
   
