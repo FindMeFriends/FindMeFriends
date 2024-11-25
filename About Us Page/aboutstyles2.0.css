@@ -500,55 +500,72 @@ nav {
 }
 /*----------footer--------*/
 .footer {
-    height: 13vh;
-    width: 100%;
-    position: absolute;
-    background-color: #000;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 0 20px; /* Padding for spacing from the edges */
-  }
-  
-  .footer-logo, .copyrights, .privacy-policy, .icons {
-    flex: 1; /* Equal space for each div */
-    text-align: center; /* Center content horizontally */
-  }
-  
-  .footer-logo img {
-    width: 150px;
-  }
-  
-  /* Copyright section adjustments */
-  .copyrights {
-    color: white;
-    display: flex; /* Keep icon and text in one row */
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap; /* Prevent line breaks */
-  }
-  
-  .copyrights i {
-    margin-right: 6px;
-    color: white;
-  }
-  
-  .privacy-policy a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .icons {
-    color: white;
-  }
-  
-  .icons i {
-    margin-right: 10px;
-  }
+  height: 13vh;
+  width: 100%;
+  position: absolute;
+  background-color: #000;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 0px; /* Padding for spacing from the edges */
+}
+
+.footer-logo, .copyrights, .privacy-policy, .icons {
+  flex: 1; /* Equal space for each div */
+  text-align: center; /* Center content horizontally */
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+/* Copyright section adjustments */
+.copyrights {
+  color: white;
+  display: flex; /* Keep icon and text in one row */
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.copyrights i {
+  margin-right: 6px;
+  color: white;
+}
+
+.privacy-policy a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.privacy-policy a:hover{
+  width: 100%;
+  text-decoration: underline white;
+}
+
+.icons {
+  color: white;
+}
+
+.icons a{
+  text-decoration: none;
+  color: white
+}
+.icons i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.icons i:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  opacity: 0.9; /* Slight opacity change */
+  transition: 0.5s;
+}
 
   /* Prevent horizontal overflow */
 body, html {
