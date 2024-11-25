@@ -204,6 +204,9 @@ nav {
   .leaf-image-yellow img {
     display: none
 }
+  .leaf-image-brown img{
+    display: none;
+  }
   .wind-image img {
     display: none
   }
