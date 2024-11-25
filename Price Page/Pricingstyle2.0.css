@@ -37,6 +37,7 @@ nav {
   list-style: none;
   display: inline-block;
   padding: 15px 20px;
+  transition: ease-out 0.3s
 }
 
 .nav-links ul li a {
@@ -45,18 +46,8 @@ nav {
   font-size: 15px;
 }
 
-.nav-links ul li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #000;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.nav-links ul li:hover::after {
-  width: 100%;
+.nav-links ul li:hover{
+  transform: scale(1.07);
 }
 
 #bars, #bars2 {
